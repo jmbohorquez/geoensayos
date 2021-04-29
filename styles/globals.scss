@@ -1,0 +1,45 @@
+@forward './basics/tags';
+
+/* ======================================= Header */
+
+@forward './layout/header';
+
+/* ======================================= Banner */
+
+@forward './layout/banners';
+
+/* ======================================= Botones */
+
+@forward './basics/botones';
+
+/* ======================================= Clases Generales */
+
+@forward './layout/layout-clases';
+
+/* ======================================= Columnas */
+
+@forward './layout/columns';
+
+/* ======================================= Inicio */
+
+@forward './pages/inicio';
+
+/* ======================================= Nosotros */
+
+@forward './pages/nosotros';
+
+/* ======================================= Servicios */
+
+@forward './pages/servicios';
+
+/* ======================================= Contacto */
+
+@forward './pages/contacto';
+
+/* ======================================= Legales */
+
+@forward './pages/legales';
+
+/* ======================================= Footer */
+
+@forward './layout/footer';

@@ -1,0 +1,39 @@
+.contacto-main-container{
+    position: relative;
+}
+.contacto-main-image-bg{
+    align-items: flex-end;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+    div{
+        height: auto;
+        width: 100%;
+    }
+}
+.contacto-main-inner{
+    margin: auto;
+    min-height: 100vh;
+    padding-top: 112px;
+    width: 84.4444%;
+
+    iframe{
+        width: 100%;
+    }
+}
+.contacto-content{
+    width: 40%;
+}
+.contacto-telefonos-container{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+
+    p{
+        width: 50%;
+    }
+}

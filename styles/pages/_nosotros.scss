@@ -1,0 +1,74 @@
+@use '../abstract/colors' as *;
+
+.banner-nosotros{
+    background-color: $color-1;
+}
+.banner-nosotros-bg-image{
+    mix-blend-mode: overlay;
+}
+.nosotros-main-content{
+    padding-bottom: 4rem;
+    position: relative;
+
+    &:after{
+        background-color: $color-2;
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 77.7777%;
+        z-index: -1;
+    }
+}
+.main-content-inner{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+    margin: -80px auto 0;
+    width: 84.4444%;
+
+    .nosotros-main-image{
+        width: 50%;
+
+        div:first-of-type{
+            box-shadow: 0 0 4px #000;
+        }
+    }
+
+    .nosotros-main-text{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        padding: 0 2rem;
+        width: 50%;
+
+        .nosotros-main-certificates{
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            column-gap: 2rem;
+            justify-content: flex-start;
+
+        }
+    }
+}
+.nosotros-antecedentes-container{
+    position: relative;
+}
+.nosotros-antecedentes-content-inner{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin:auto;
+    position: relative;
+    width: 84.4444%;
+}
+.nosotros-antecedentes-text-container{
+    width: 50%;
+
+    p{
+        color: #FFF;
+    }
+}

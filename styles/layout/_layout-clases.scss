@@ -1,0 +1,18 @@
+@use '../abstract/colors' as *;
+
+.titulo-cuadrado{
+    background-color: #000;
+    color: $color-4;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    min-width: 392px;
+    padding: 57px 93px;
+    width: 28%;
+
+    .titulo-numero{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+}

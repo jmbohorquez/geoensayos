@@ -1,0 +1,54 @@
+@use '../abstract/colors' as *;
+
+.serv-container{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    h3{
+        font-size: 2.5rem;
+        text-align: center;
+        width: 50%;
+    }
+}
+.servicios-ensayos-panel{
+    background: rgb(136,136,136);
+    background: linear-gradient(180deg, rgba(136,136,136,1) 0%, rgba(96,96,98,1) 100%);
+
+    h3{
+        color: #FFF;
+    }
+
+    p{
+        color: #FFF;
+    }
+}
+.servicios-panel{
+    background-color: lighten( $color-1, 20% );
+}
+.serv-icon{
+    height: 130px;
+    margin: auto;
+    width: 130px;
+}
+.servicios-inner{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 2rem;
+    width: 84.4444%;
+
+    .column{
+        padding: 0 2rem;
+        width: 33.3333%;
+
+        p{
+            text-align: center;
+        }
+
+        &:nth-child(2){
+            border-left: solid 2px $color-4;
+            border-right: solid 2px $color-4;
+        }
+    }
+}

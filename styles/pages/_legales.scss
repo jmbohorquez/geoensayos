@@ -1,0 +1,29 @@
+@use '../abstract//colors' as *;
+
+.banner-legales{
+    align-items: center;
+    background-color: lighten( $color-1, 20% );
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+
+    h1{
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        width: 60%;
+    }
+}
+.legales-main-inner{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 84.4444%;
+
+    h3{
+        font-size: 1.5rem;
+    }
+}
+.firma{
+    font-style: italic;
+    margin: 3rem 0 1rem;
+}

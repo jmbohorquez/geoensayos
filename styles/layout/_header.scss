@@ -1,0 +1,53 @@
+@use '../abstract/fonts' as *;
+
+.header{
+
+    top: 0;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    
+    &-inner{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 84.4444%;
+
+        .header-logo-container{
+            height: 60px;
+
+            svg{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        li{
+            padding: 0 1rem;
+            
+            a{
+                align-items: center;
+                display: flex;
+                color: #333;
+                font-family: $font-2;
+                font-size: 18px;
+                font-weight: 500;
+                height: 100%;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+.banner{
+
+}
+.banner-image-bg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+}
+.banner-full{
+    height: 100vh;
+}
+.banner-text-container{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &.center-content{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+.banner-text-container-inner{
+    width: 55.5555%;
+    
+    h1{
+        color: #FFF;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 0 0 4px #000;
+    }
+    p{
+        color: #FFF;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        text-shadow: 0 0 4px #000;
+    }
+}

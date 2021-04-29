@@ -1,0 +1,57 @@
+.footer{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(55,55,55,1) 100%);
+    padding: 4rem 0;
+
+    h3{
+        color: #FFF;
+    }
+    
+    p, ul, ol{
+        color: #FFF;
+        font-size: 0.8rem;
+        line-height: 160%;
+    }
+
+    strong{
+        color: #FFF;
+    }
+}
+
+.footer-inner{
+    margin: 0 auto;
+    width: 84.4444%;
+}
+
+.footer-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a{
+        align-items: center;
+        display: flex;
+
+        &:before{
+            align-items: center;
+            display: flex;
+            content: '\203A';
+            margin-right: 4px;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover:before{
+            margin-right: 6px;
+        }
+    }
+}
+.footer-certificates{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    
+    div{
+        width: fit-content;
+    }
+}

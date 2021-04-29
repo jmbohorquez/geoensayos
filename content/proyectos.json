@@ -1,0 +1,18 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "pagina": 1,
+            "titulo": "",
+            "slug": "",
+            "destacado": true,
+            "ubicacion": "",
+            "tipo": "",
+            "descripcion": "",
+            "portada": "",
+            "fotos": [
+                ""
+            ]
+        }
+    ]
+}

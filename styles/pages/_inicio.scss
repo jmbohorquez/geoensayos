@@ -1,0 +1,134 @@
+@use '../abstract/colors' as *;
+
+.banner-home{
+    background-color: $color-1;
+}
+.banner-home-text-container{
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.banner-home-text-inner{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: -96px;
+    position: relative;
+    width: 92.2222%;
+    
+    .banner-home-image{
+        position: relative;
+        width: 68%;
+    }
+
+    .banner-home-text{
+        padding-left: 2rem;
+        width: 32%;
+
+        .banner-home-title{
+            font-size: 2.5rem;
+        }
+
+        .banner-home-certificados{
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+
+            .certificate-container{
+                position: relative;
+
+                &.last-certificate{
+                    margin-left: 1rem;
+                }
+            }
+            
+        }
+    }
+}
+
+.inicio-servicios-panel{
+    padding-bottom: 4rem;
+    padding-top: 96px;
+    position: relative;
+
+    &:after{
+        background-color: $color-2;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 87.2222%;
+        z-index: -1;
+    }
+}
+.inicio-servicios-panel-content{
+    display: flex;
+    justify-content: flex-end;
+
+    .inicio-servicios-panel-content-inner{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        padding-left: 10.4166%;
+        width: 87.2222%;
+
+        .inicio-servicios-text{
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            border-left: solid 2px $color-4;
+            padding-bottom: 1rem;
+            padding-left: 58px;
+            padding-right: 2rem;
+            width: 60%;
+        }
+
+        .inicio-servicios-imagen{
+            margin-top: -112px;
+            width: 40%;
+        }
+    }
+}
+
+.inicio-nosotros-panel{
+    position: relative;
+}
+.inicio-nosotros-inner{
+    background-color: rgba(0,0,0, 0.5);
+    height: 100%;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 9;
+
+}
+
+.inicio-nosotros-text-container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    padding: 5rem 0 0;
+    width: 70%;
+    
+    .nosotros-logo{
+        width: 25%;
+        
+        svg{
+            height: auto;
+            width: 176px;
+        }
+    }
+
+    .nosotros-texto{
+        border-left: solid 2px $color-4;
+        padding-left: 4rem;
+        padding-bottom: 3rem;
+        width: 75%;
+
+        p{
+            color: #FFF;
+        }
+    }
+}

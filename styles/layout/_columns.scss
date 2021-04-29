@@ -1,0 +1,10 @@
+
+.block-columns{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+}
+
+.has-3-columns .column{
+    width: calc( 33.3333% - 2rem );
+}
