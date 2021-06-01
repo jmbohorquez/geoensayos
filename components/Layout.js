@@ -1,9 +1,14 @@
+import { useRouter } from "next/router";
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
 
+    const router = useRouter()
+    const arrayURL = router.pathname.split('/')
+    const currentPage = arrayURL[1]
+    
     return(
         <>
             <Head>
@@ -17,7 +22,9 @@ const Layout = ({ children }) => {
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"></link>
             </Head>
             
-            <Header />
+            <Header 
+                currentPage = { currentPage }
+            />
 
             { children }
 

@@ -45,25 +45,46 @@ const Footer = () => {
                                 <a target="_blank">Certificado ISO 9001</a>
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                href="./documentos/certificado-acreditacion-onac.pdf"
+                            >
+                                <a target="_blank">Certificado Acreditación ONAC</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-certificates column">
-                    <Image 
-                        src="/images/certificado-ISO-IEC-b.png"
-                        alt="Certificado ISO / IEC"
-                        layout="fixed"
-                        height={ 96 }
-                        width={ 96 }
-                        quality={ 60 }
-                    />
-                    <Image 
-                        src="/images/certificado-ISO-9001-b.png"
-                        alt="Certificado ISO 9001"
-                        layout="fixed"
-                        height={ 42 }
-                        width={ 108 }
-                        quality={ 60 }
-                    />
+                <div className="footer-certificate-container">
+                        <Image 
+                            src="/images/certificado-onac-b.png"
+                            alt="Certificado Acreditación ONAC"
+                            layout="fixed"
+                            height={ 60 }
+                            width={ 97 }
+                            quality={ 60 }
+                        />
+                    </div>
+                    <div className="footer-certificate-container">
+                        <Image 
+                            src="/images/certificado-ISO-IEC-b.png"
+                            alt="Certificado ISO / IEC"
+                            layout="fixed"
+                            height={ 90 }
+                            width={ 90 }
+                            quality={ 60 }
+                        />
+                    </div>
+                    <div className="footer-certificate-container">
+                        <Image 
+                            src="/images/certificado-ISO-9001-b.png"
+                            alt="Certificado ISO 9001"
+                            layout="fixed"
+                            height={ 42 }
+                            width={ 108 }
+                            quality={ 60 }
+                        />
+                    </div>
                 </div>
             </div>
             

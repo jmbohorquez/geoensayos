@@ -16,31 +16,56 @@
     margin-bottom: -96px;
     position: relative;
     width: 92.2222%;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        flex-flow: column;
+        margin-bottom: 0;
+        padding-top: 64px;
+        width: 100%;
+    }
     
     .banner-home-image{
         position: relative;
         width: 68%;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            width: 100%;
+        }
     }
 
     .banner-home-text{
         padding-left: 2rem;
         width: 32%;
 
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            padding-left: 0;
+            padding: 0 1rem 2rem;
+            width: 100%;
+        }
+
         .banner-home-title{
             font-size: 2.5rem;
+
+            @media ( max-width: 812px ) and ( orientation: portrait ){
+                font-size: 1.8rem;
+                text-align: center;
+            }
         }
 
         .banner-home-certificados{
             align-items: center;
             display: flex;
             flex-flow: row nowrap;
+            column-gap: 1rem;
+
+            @media ( max-width: 812px ) and ( orientation: portrait ){
+                margin: auto;
+                padding: .5rem 0;
+                width: 70%;
+            }
 
             .certificate-container{
                 position: relative;
-
-                &.last-certificate{
-                    margin-left: 1rem;
-                }
             }
             
         }
@@ -52,6 +77,11 @@
     padding-top: 96px;
     position: relative;
 
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
     &:after{
         background-color: $color-2;
         content: '';
@@ -61,6 +91,10 @@
         right: 0;
         width: 87.2222%;
         z-index: -1;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            width: 100%;
+        }
     }
 }
 .inicio-servicios-panel-content{
@@ -74,6 +108,13 @@
         padding-left: 10.4166%;
         width: 87.2222%;
 
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            flex-flow: column;
+            padding-left: 0;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
         .inicio-servicios-text{
             display: flex;
             flex-flow: column;
@@ -83,17 +124,33 @@
             padding-left: 58px;
             padding-right: 2rem;
             width: 60%;
+
+            @media ( max-width: 812px ) and ( orientation: portrait ){
+                border-left: none;
+                width: 100%;
+            }
         }
 
         .inicio-servicios-imagen{
             margin-top: -112px;
             width: 40%;
+
+            @media ( max-width: 812px ) and ( orientation: portrait ){
+                margin-top: 1rem;
+                width: 100%;
+            }
         }
     }
 }
 
 .inicio-nosotros-panel{
     position: relative;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        &.banner-full{
+
+        }
+    }
 }
 .inicio-nosotros-inner{
     background-color: rgba(0,0,0, 0.5);
@@ -111,13 +168,29 @@
     margin: auto;
     padding: 5rem 0 0;
     width: 70%;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        flex-flow: column;
+        width: 100%;
+    }
     
     .nosotros-logo{
         width: 25%;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+            width: 100%;
+        }
         
         svg{
             height: auto;
             width: 176px;
+
+            @media ( max-width: 812px ) and ( orientation: portrait ){
+                width: 96px;
+            }
         }
     }
 
@@ -126,6 +199,13 @@
         padding-left: 4rem;
         padding-bottom: 3rem;
         width: 75%;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            border: none;
+            margin: auto;
+            padding: 0;
+            width: 80%;
+        }
 
         p{
             color: #FFF;

@@ -21,6 +21,16 @@
 .footer-inner{
     margin: 0 auto;
     width: 84.4444%;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        &.block-columns{
+            flex-flow: column;
+
+            &.has-3-columns .column{
+                width: 100%;
+            }
+        }
+    }
 }
 
 .footer-menu{
@@ -50,8 +60,15 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        align-items: flex-start;
+        padding-top: 2rem;
+
+    }
     
-    div{
+    .footer-certificate-container{
+        padding-bottom: 1rem;
         width: fit-content;
     }
 }

@@ -10,6 +10,11 @@
     padding: 57px 93px;
     width: 28%;
 
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        min-width: auto;
+        width: 100%;
+    }
+
     .titulo-numero{
         display: block;
         font-weight: 500;

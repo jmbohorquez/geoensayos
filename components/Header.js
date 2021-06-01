@@ -1,8 +1,28 @@
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Logo from '../public/images/logo.svg';
 
-const Header = () => {
+const Header = ({ currentPage }) => {
 
+    const [ showMenu, setShowMenu ] = useState( false )
+
+    const mostrarOcultarMenu = () => {
+
+        if( showMenu ) {
+            setShowMenu( false )
+        }
+        else{
+            setShowMenu( true )
+        }
+
+    }
+
+    useEffect( () => {
+        
+        setShowMenu( false )
+
+    }, [ currentPage ] );
+    
     return(
         <header className="header">
             <div className="header-inner">
@@ -14,7 +34,7 @@ const Header = () => {
                     </Link>
                     
                 </div>
-                <nav className="header-main-nav">
+                <nav className={ `header-main-nav ${ showMenu ? 'show' : '' }` }>
                     <ul className="menu">
                         <li className="menu-item">
                             <Link
@@ -46,6 +66,11 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
+                <div className={ `menu-boton ${ showMenu ? 'cerrar' : '' }` } onClick={ () => mostrarOcultarMenu() } >
+                    <span className="bot-line line-1"></span>
+                    <span className="bot-line line-2"></span>
+                    <span className="bot-line line-3"></span>
+                </div>
             </div>
         </header>
     );

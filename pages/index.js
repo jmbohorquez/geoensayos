@@ -51,17 +51,27 @@ export default function Home() {
                         </div>
                         <div className="banner-home-text">
                             <div className="banner-home-certificados">
+                            <div className="certificate-container">
+                                    <Image 
+                                        src="/images/certificado-onac-bn.png"
+                                        alt="Certificado Acreditado ONAC"
+                                        layout="intrinsic"
+                                        height={ 60 }
+                                        width={ 97 }
+                                        quality={ 70 }
+                                    />
+                                </div>
                                 <div className="certificate-container">
                                     <Image 
                                         src="/images/certificado-ISO-IEC.png"
                                         alt="Certificado ISO / IEC 17025"
                                         layout="intrinsic"
-                                        height={ 98 }
-                                        width={ 98 }
+                                        height={ 90 }
+                                        width={ 90 }
                                         quality={ 50 }
                                     />
                                 </div>
-                                <div className="certificate-container last-certificate">
+                                <div className="certificate-container">
                                     <Image 
                                         src="/images/certificado-ISO-9001.png"
                                         alt="Certificado ISO 9001"
@@ -73,7 +83,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <h1 className="banner-home-title">Ingeniería de materiales</h1>
-                            <p className="banner-home-description">Somos una fábrica de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.</p>
+                            <p className="banner-home-description">Somos una fábrica de ensayos, altamente productiva, confiable y eficaz con acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC) y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.</p>
                         </div>
                     </div>
                 </div>
