@@ -51,7 +51,7 @@ export default function Home() {
                         </div>
                         <div className="banner-home-text">
                             <div className="banner-home-certificados">
-                            <div className="certificate-container">
+                                {/*<div className="certificate-container">
                                     <Image 
                                         src="/images/certificado-onac-bn.png"
                                         alt="Certificado Acreditado ONAC"
@@ -60,7 +60,7 @@ export default function Home() {
                                         width={ 97 }
                                         quality={ 70 }
                                     />
-                                </div>
+                                </div>*/}
                                 <div className="certificate-container">
                                     <Image 
                                         src="/images/certificado-ISO-IEC.png"

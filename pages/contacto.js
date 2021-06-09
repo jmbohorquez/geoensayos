@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import Location from '../public/images/location.svg'
+import Mobile from '../public/images/smartphone.svg'
+import Phone from '../public/images/phone.svg'
+
 const Contacto = () => {
 
     //SEO
@@ -39,20 +43,30 @@ const Contacto = () => {
                 
                 <div className="contacto-main-inner">
                     <div className="contacto-content">
-                        <p><strong>Dirección</strong><br />
-                        Calle 73 # 69P - 16, Bogotá D.C.</p>
-
-                        <div className="contacto-telefonos-container">
-                            <p><strong>Celulares</strong> <br />
-                            310 233 0373<br />
-                            317 575 4994</p>
-                            <p><strong>Teléfono</strong><br />
-                            (571) 320 5020</p>
+                        <h1>Contacto</h1>
+                        <div className="contacto-medios-wrap">
+                            <div className="contacto-dir contacto-item">
+                                <Location />
+                                <p><strong>Dirección</strong><br />
+                                Calle 73 # 69P - 16, Bogotá D.C.</p>
+                            </div>
+                            <div className="contacto-moviles contacto-item">
+                                <Mobile />
+                                <p><strong>Celulares</strong> <br />
+                                310 233 0373<br />
+                                317 575 4994</p>
+                            </div>
+                            <div className="contacto-fijo contacto-item">
+                                <Phone />
+                                <p><strong>Teléfono</strong><br />
+                                (571) 320 5020</p>
+                            </div>
                         </div>
+                        
                         <p>Puedes contactarnos a través del siguiente formulario.</p>
                         <iframe 
                             onload="javascript:parent.scrollTo(0,0);" 
-                            height="772" 
+                            height="550" 
                             allowTransparency="true" 
                             scrolling="no" 
                             frameBorder="0" 

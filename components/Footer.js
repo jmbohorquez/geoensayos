@@ -40,6 +40,13 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link
+                                href="/quejas-reclamos"
+                            >
+                                <a>Quejas y reclamos</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href="./documentos/certificado-iso-9001.pdf"
                             >
                                 <a target="_blank">Certificado ISO 9001</a>
@@ -55,7 +62,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-certificates column">
-                <div className="footer-certificate-container">
+                    {/*<div className="footer-certificate-container">
                         <Image 
                             src="/images/certificado-onac-b.png"
                             alt="Certificado Acreditación ONAC"
@@ -64,7 +71,7 @@ const Footer = () => {
                             width={ 97 }
                             quality={ 60 }
                         />
-                    </div>
+                    </div>*/}
                     <div className="footer-certificate-container">
                         <Image 
                             src="/images/certificado-ISO-IEC-b.png"

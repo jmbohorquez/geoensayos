@@ -26,18 +26,40 @@
     }
 }
 .contacto-content{
-    width: 40%;
+    width: 50%;
+
+    h1{
+        margin-bottom: 2rem;
+    }
 
     @media ( max-width: 812px ) and ( orientation: portrait ){
         width: 100%;
     }
 }
-.contacto-telefonos-container{
+.contacto-medios-wrap{
     display: flex;
     flex-flow: row nowrap;
     column-gap: 2rem;
 
-    p{
-        width: 50%;
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        flex-flow: column;
     }
+}
+.contacto-item{
+    width: 33.3333%;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        width: 100%;
+    }
+
+    p{
+        margin-top: 8px;
+    }
+
+    svg{
+        height: 2rem;
+    }
+}
+.contacto-telefonos-container{
+    
 }
