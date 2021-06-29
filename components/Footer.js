@@ -10,7 +10,8 @@ const Footer = () => {
                 <div className="column">
                     <p>http://www.geoensayos.com <br />
                     Todos los derechos reservados { new Date().getFullYear() }</p>
-                    <p><strong>Teléfono:</strong> (+571) 310 233 0373 <br />
+                    <p><strong>Celular:</strong> (+57) 317 575 4994 <br />
+                    <strong>Teléfono:</strong> (+57) 1 - 320 5020 <br />
                     <strong>Dirección:</strong> Calle 73 No. 69P-16. <br />
                     Bogotá D.C. Colombia</p>
                 </div>
@@ -60,38 +61,6 @@ const Footer = () => {
                             </Link>
                         </li>
                     </ul>
-                </div>
-                <div className="footer-certificates column">
-                    {/*<div className="footer-certificate-container">
-                        <Image 
-                            src="/images/certificado-onac-b.png"
-                            alt="Certificado Acreditación ONAC"
-                            layout="fixed"
-                            height={ 60 }
-                            width={ 97 }
-                            quality={ 60 }
-                        />
-                    </div>*/}
-                    <div className="footer-certificate-container">
-                        <Image 
-                            src="/images/certificado-ISO-IEC-b.png"
-                            alt="Certificado ISO / IEC"
-                            layout="fixed"
-                            height={ 90 }
-                            width={ 90 }
-                            quality={ 60 }
-                        />
-                    </div>
-                    <div className="footer-certificate-container">
-                        <Image 
-                            src="/images/certificado-ISO-9001-b.png"
-                            alt="Certificado ISO 9001"
-                            layout="fixed"
-                            height={ 42 }
-                            width={ 108 }
-                            quality={ 60 }
-                        />
-                    </div>
                 </div>
             </div>
             

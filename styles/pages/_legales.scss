@@ -27,3 +27,26 @@
     font-style: italic;
     margin: 3rem 0 1rem;
 }
+.formulario-quejas-reclamos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    p{
+        margin: 1rem auto 2rem;
+        text-align: center;
+        width: 50%;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            width: 100%;
+        }
+    }
+
+    iframe{
+        width: 50%;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            width: 100%;
+        }
+    }
+}

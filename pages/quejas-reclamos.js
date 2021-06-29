@@ -33,6 +33,18 @@ const QuejasReclamos = () => {
                     <p>Vía telefónica [57] 1 320 5020 o [57] 1 317 575 4994</p>
                     <p>Toda la información del cliente obtenida durante el proceso de quejas y reclamos, requerimientos y demás será manejada de acuerdo con nuestras <Link href="/acuerdo-confidencialidad"><a>políticas de confidencialidad</a></Link> e <Link href="/politica-imparcialidad"><a>imparcialidad</a></Link></p>
                     <p><strong>Gracias</strong></p>
+                    <div className="formulario-quejas-reclamos">
+                        <p>Puede enviarnos su queja o reclamo a través del siguiente formulario</p>
+                        <iframe 
+                            height="1093" 
+                            allowtransparency="true" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            src="https://www.i180.co/machform/embed.php?id=19738" 
+                            title="Geoensayos quejas y reclamos"
+                        >
+                        </iframe>
+                    </div>
                 </div>
             </main>
         </>

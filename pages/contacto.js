@@ -52,14 +52,13 @@ const Contacto = () => {
                             </div>
                             <div className="contacto-moviles contacto-item">
                                 <Mobile />
-                                <p><strong>Celulares</strong> <br />
-                                310 233 0373<br />
-                                317 575 4994</p>
+                                <p><strong>Celular</strong> <br />
+                                (+57) 317 575 4994</p>
                             </div>
                             <div className="contacto-fijo contacto-item">
                                 <Phone />
                                 <p><strong>Teléfono</strong><br />
-                                (571) 320 5020</p>
+                                (57) 1 - 320 5020</p>
                             </div>
                         </div>
                         

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import LogoB from '../public/images/logo-b.svg';
+import Certificaciones from '../components/Certificaciones';
 
 export default function Home() {
     
@@ -50,67 +51,26 @@ export default function Home() {
                             />
                         </div>
                         <div className="banner-home-text">
-                            <div className="banner-home-certificados">
-                                {/*<div className="certificate-container">
-                                    <Image 
-                                        src="/images/certificado-onac-bn.png"
-                                        alt="Certificado Acreditado ONAC"
-                                        layout="intrinsic"
-                                        height={ 60 }
-                                        width={ 97 }
-                                        quality={ 70 }
-                                    />
-                                </div>*/}
-                                <div className="certificate-container">
-                                    <Image 
-                                        src="/images/certificado-ISO-IEC.png"
-                                        alt="Certificado ISO / IEC 17025"
-                                        layout="intrinsic"
-                                        height={ 90 }
-                                        width={ 90 }
-                                        quality={ 50 }
-                                    />
-                                </div>
-                                <div className="certificate-container">
-                                    <Image 
-                                        src="/images/certificado-ISO-9001.png"
-                                        alt="Certificado ISO 9001"
-                                        layout="intrinsic"
-                                        height={ 58 }
-                                        width={ 151 }
-                                        quality={ 70 }
-                                    />
-                                </div>
-                            </div>
                             <h1 className="banner-home-title">Ingeniería de materiales</h1>
-                            <p className="banner-home-description">Somos una fábrica de ensayos, altamente productiva, confiable y eficaz con acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC) y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.</p>
+                            <p className="banner-home-description">Somos una fábrica de ensayos para el sector construcción, altamente productiva, confiable y eficaz. Con un portafolio de 23 ensayos acreditados por la ONAC bajo la norma NTC/IEC 17025:2017 y todos sus ensayos y servicios y certificados bajo la norma ISO:9001:2015</p>
                         </div>
                     </div>
                 </div>
             </section>
-                
             <main>
                 <div className="inicio-servicios-panel">
                     <h2 className="titulo-cuadrado"><span className="titulo-numero">01_</span> Nuestros Servicios</h2>
                     <div className="inicio-servicios-panel-content">
                         <div className="inicio-servicios-panel-content-inner">
                             <div className="inicio-servicios-text">
-                                <p>Ofrecemos ensayos de laboratorio aplicado a materiales; supervisión, control y seguimiento al plan de inspección y ensayos en obra entre otros. Nuestro laboratorio de Ingeniería de materiales ofrece un valor agregado técnico en sus conceptos y altos estándares de eficacia y confiabilidad…</p>
+                                <Certificaciones />
+                                <p>Ofrecemos ensayos de laboratorio aplicados a materiales del sector construcción a través de servicios de supervisión, control al plan de inspección y ensayos, laboratorios en obra, toma de muestras, ejecución de ensayos, exploración manual (apiques), entre otros servicios conexos.</p>
+                                <p>Nuestro laboratorio de Ingeniería de materiales ofrece un valor agregado técnico en sus conceptos y altos estándares de eficacia y confiabilidad…</p>
                                 <Link
                                     href="/servicios"
                                 >
                                     <a className="btn"><span>Ver los servicios</span></a>
                                 </Link>
-                            </div>
-                            <div className="inicio-servicios-imagen">
-                                <Image 
-                                    src="/images/inicio-servicios-geoensayos.jpg"
-                                    alt="Servicios de pruebas geotécnicas"
-                                    layout="responsive"
-                                    height={ 622 }
-                                    width={ 496 }
-                                    quality={ 40 }
-                                />
                             </div>
                         </div>
                     </div>
