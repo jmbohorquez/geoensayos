@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import ContactPanel from '../components/ContactPanel';
 import Certificaciones from '../components/Certificaciones';
 
 const Nosotros = () => {
@@ -41,6 +42,7 @@ const Nosotros = () => {
                     <div className="banner-text-container-inner">
                         <h1>Nosotros</h1>
                         <p>Somos un laboratorio de ensayos, altamente productivos, confiables y eficaces acreditados y certificados bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.</p>
+                        <ContactPanel />
                     </div>
                 </div>
             </section>

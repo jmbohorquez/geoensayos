@@ -13,6 +13,32 @@
 .banner-nosotros-bg-image{
     mix-blend-mode: overlay;
 }
+.banner-text-container-inner{
+    .contact-data-wrap{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        column-gap: 2rem;
+
+        @media ( max-width: 812px ) and ( orientation: portrait ){
+            flex-flow: column;
+
+            p{
+                margin: 0 0 1rem;
+            }
+        }
+        
+        h3{
+            display: none;
+        }
+        p{
+            justify-content: center;
+        }
+        svg{
+            fill:#FFF;
+        }
+    }
+}
 .nosotros-main-content{
     padding-bottom: 4rem;
     position: relative;

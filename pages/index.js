@@ -5,6 +5,8 @@ import Link from 'next/link';
 import LogoB from '../public/images/logo-b.svg';
 import Certificaciones from '../components/Certificaciones';
 
+import ContactPanel from '../components/ContactPanel';
+
 export default function Home() {
     
     //SEO
@@ -53,6 +55,7 @@ export default function Home() {
                         <div className="banner-home-text">
                             <h1 className="banner-home-title">Ingeniería de materiales</h1>
                             <p className="banner-home-description">Somos una fábrica de ensayos para el sector construcción, altamente productiva, confiable y eficaz. Con un portafolio de 23 ensayos acreditados por la ONAC bajo la norma NTC/IEC 17025:2017 y todos sus ensayos y servicios y certificados bajo la norma ISO:9001:2015</p>
+                            <ContactPanel />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,30 @@
+@use '../abstract/colors' as *;
+
+.contact-data-wrap{
+
+    p{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .icon{
+        display: block;
+        margin-right: 1rem;
+
+        svg{
+            height: 24px;
+            fill:$color-6;
+            width: auto;
+        }
+    }
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+
+        p{
+            margin: 0 0 1rem;
+        }
+    }
+}

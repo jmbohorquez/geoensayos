@@ -12,6 +12,10 @@
 
 @forward './basics/botones';
 
+/* ======================================= Panel de contacto */
+
+@forward './components/contact_panel';
+
 /* ======================================= Clases Generales */
 
 @forward './layout/layout-clases';
@@ -45,4 +49,5 @@
 @forward './layout/footer';
 
 /* ======================================= Legales */
+
 @forward './components/certificaciones';
