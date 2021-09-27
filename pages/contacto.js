@@ -65,13 +65,13 @@ const Contacto = () => {
                         <p>Puedes contactarnos a través del siguiente formulario.</p>
                         <iframe 
                             onload="javascript:parent.scrollTo(0,0);" 
-                            height="550" 
+                            height="714" 
                             allowTransparency="true" 
                             scrolling="no" 
                             frameBorder="0" 
-                            src="https://www.i180.co/machform/embed.php?id=19282" 
+                            src="https://arteobjeto.co/machform/embed.php?id=19282" 
                             title="Geoensayos - Contacto"
-                        ><a href="https://www.i180.co/machform/view.php?id=19282" title="Geoensayos - Contacto">Geoensayos - Contacto</a></iframe>
+                        ><a href="https://arteobjeto.co/machform/view.php?id=19282" title="Geoensayos - Contacto">Geoensayos - Contacto</a></iframe>
                     </div>
 
                 </div>

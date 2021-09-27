@@ -36,14 +36,14 @@ const QuejasReclamos = () => {
                     <div className="formulario-quejas-reclamos">
                         <p>Puede enviarnos su queja o reclamo a través del siguiente formulario</p>
                         <iframe 
+                            onload="javascript:parent.scrollTo(0,0);" 
                             height="1093" 
-                            allowtransparency="true" 
+                            allowTransparency="true" 
                             scrolling="no" 
-                            frameborder="0" 
-                            src="https://www.i180.co/machform/embed.php?id=19738" 
+                            frameBorder="0" 
+                            src="https://arteobjeto.co/machform/embed.php?id=19738" 
                             title="Geoensayos quejas y reclamos"
-                        >
-                        </iframe>
+                        ><a href="https://arteobjeto.co/machform/view.php?id=19738" title="Geoensayos quejas y reclamos">Geoensayos quejas y reclamos</a></iframe>
                     </div>
                 </div>
             </main>
