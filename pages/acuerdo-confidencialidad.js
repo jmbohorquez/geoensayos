@@ -1,28 +1,21 @@
-import Head from 'next/head';
+import SEO from "../components/SEO"
 
 const acuerdoConfidencialidad = () => {
 
     //SEO
-    const title = 'Acuerdo de confidencialidad | Geoensayos';
-    const description = 'Contáctanos y conoce nuestro portafolio de servicios en ingeniería de materiales. Enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.';
-    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas';
-    const socialImg = '/images/meta-images/contacto.jpg';
+    const title = 'Acuerdo de confidencialidad | Geoensayos'
+    const description = 'Contáctanos y conoce nuestro portafolio de servicios en ingeniería de materiales. Enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.'
+    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
+    const socialImg = '/images/meta-images/contacto.jpg'
     
     return(
         <>
-            <Head>
-                <title>{ title }</title>
-                <meta name="description" content={ description } />
-                <meta name="keywords" content={ keywords } />
-                <meta httpEquiv="expires" content="43200"/>
-                <meta property="og:type" content="company" />
-                <meta property="og:title" content={ title } />
-                <meta property="og:description" content={ description } />
-                <meta property="og:image" content={ socialImg } />
-                <meta name="twitter:title" content={ title } />
-                <meta name="twitter:description" content={ description } />
-                <meta name="twitter:image" content={ socialImg } />
-            </Head>
+            <SEO 
+                title={title} 
+                description={description} 
+                keywords={keywords} 
+                socialImg={socialImg}
+            />
             <section className="banner banner-legales banner-politica-imparcialidad">
                 <h1>Acuerdo de confidencialidad</h1>
             </section>
@@ -62,4 +55,4 @@ const acuerdoConfidencialidad = () => {
 
 }
 
-export default acuerdoConfidencialidad;
+export default acuerdoConfidencialidad

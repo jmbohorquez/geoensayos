@@ -1,36 +1,32 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Concreto from '../public/images/serv-concreto.svg';
-import Asfalto from '../public/images/serv-asfalto.svg';
-import Suelos from '../public/images/serv-suelos.svg';
-import Apiques from '../public/images/serv-apiques.svg';
-import Laboratorio from '../public/images/serv-laboratorio.svg';
-import Supervision from '../public/images/serv-supervision.svg';
+import Image from 'next/image'
+
+import SEO from '../components/SEO'
+
+import Concreto from '../public/images/serv-concreto.svg'
+import Asfalto from '../public/images/serv-asfalto.svg'
+import Suelos from '../public/images/serv-suelos.svg'
+import Apiques from '../public/images/serv-apiques.svg'
+import Laboratorio from '../public/images/serv-laboratorio.svg'
+import Supervision from '../public/images/serv-supervision.svg'
 
 
 const Servicios = () => {
 
     //SEO
-    const title = 'Portafolio de servicios | Geoensayos';
-    const description = 'Servicios en ingeniería de materiales, estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.';
-    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas';
-    const socialImg = '/images/meta-images/servicios.jpg';
+    const title = 'Portafolio de servicios | Geoensayos'
+    const description = 'Servicios en ingeniería de materiales, estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.'
+    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
+    const socialImg = '/images/meta-images/servicios.jpg'
     
     return(
         <>
-            <Head>
-                <title>{ title }</title>
-                <meta name="description" content={ description } />
-                <meta name="keywords" content={ keywords } />
-                <meta httpEquiv="expires" content="43200"/>
-                <meta property="og:type" content="company" />
-                <meta property="og:title" content={ title } />
-                <meta property="og:description" content={ description } />
-                <meta property="og:image" content={ socialImg } />
-                <meta name="twitter:title" content={ title } />
-                <meta name="twitter:description" content={ description } />
-                <meta name="twitter:image" content={ socialImg } />
-            </Head>
+            <SEO 
+                title={title} 
+                description={description} 
+                keywords={keywords} 
+                socialImg={socialImg}
+            />
+            
             <section className="banner banner-servicios banner-full">
                 <Image 
                     src="/images/servicios-banner-bg.jpg"
@@ -93,8 +89,8 @@ const Servicios = () => {
                 </div>
             </section>
         </>
-    );
+    )
 
 }
 
-export default Servicios;
+export default Servicios

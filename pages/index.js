@@ -1,35 +1,28 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
 
-import LogoB from '../public/images/logo-b.svg';
-import Certificaciones from '../components/Certificaciones';
+import SEO from '../components/SEO'
+import BTN from '../components/BotonComponent'
+import LogoB from '../public/images/logo-b.svg'
+import Certificaciones from '../components/Certificaciones'
 
-import ContactPanel from '../components/ContactPanel';
+import ContactPanel from '../components/ContactPanel'
 
 export default function Home() {
     
     //SEO
-    const title = 'Geoensayos, laborato de pruebas geológicas';
-    const description = 'Somos una fábrica de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.';
-    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas';
-    const socialImg = '/images/meta-images/inicio.jpg';
+    const title = 'Geoensayos, laborato de pruebas geológicas'
+    const description = 'Somos una fábrica de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.'
+    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
+    const socialImg = '/images/meta-images/inicio.jpg'
     
     return (
         <>
-            <Head>
-                <title>{ title }</title>
-                <meta name="description" content={ description } />
-                <meta name="keywords" content={ keywords } />
-                <meta httpEquiv="expires" content="43200"/>
-                <meta property="og:type" content="company" />
-                <meta property="og:title" content={ title } />
-                <meta property="og:description" content={ description } />
-                <meta property="og:image" content={ socialImg } />
-                <meta name="twitter:title" content={ title } />
-                <meta name="twitter:description" content={ description } />
-                <meta name="twitter:image" content={ socialImg } />
-            </Head>
+            <SEO 
+                title={title} 
+                description={description} 
+                keywords={keywords} 
+                socialImg={socialImg}
+            />
             
             <section className="banner banner-home banner-full">
                 <Image 
@@ -69,11 +62,10 @@ export default function Home() {
                                 <Certificaciones />
                                 <p>Ofrecemos ensayos de laboratorio aplicados a materiales del sector construcción a través de servicios de supervisión, control al plan de inspección y ensayos, laboratorios en obra, toma de muestras, ejecución de ensayos, exploración manual (apiques), entre otros servicios conexos.</p>
                                 <p>Nuestro laboratorio de Ingeniería de materiales ofrece un valor agregado técnico en sus conceptos y altos estándares de eficacia y confiabilidad…</p>
-                                <Link
-                                    href="/servicios"
-                                >
-                                    <a className="btn"><span>Ver los servicios</span></a>
-                                </Link>
+                                <BTN 
+                                    url='/servicios'
+                                    anchor='Ver los servicios'
+                                />
                             </div>
                         </div>
                     </div>
@@ -94,11 +86,10 @@ export default function Home() {
                             </div>
                             <div className="nosotros-texto">
                                 <p>GEO ENSAYOS SAS es un laboratorio de ingeniería de materiales enfocado en el procesamiento de concretos, suelos, agregados y mezclas asfálticas con altos estándares de calidad, y conceptos técnicos de valor añadido…</p>
-                                <Link
-                                    href="/nosotros"
-                                >
-                                    <a className="btn"><span>Saber Más</span></a>
-                                </Link>
+                                <BTN 
+                                    url='/nosotros'
+                                    anchor='Saber Más'
+                                />
                             </div>
                         </div>
                     </div>

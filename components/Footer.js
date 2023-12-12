@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/link'
+
+import MenuInfo from '../content/menu.json'
 
 const Footer = () => {
 
@@ -14,6 +15,24 @@ const Footer = () => {
                     <strong>Teléfono:</strong> (+57) 1 - 320 5020 <br />
                     <strong>Dirección:</strong> Calle 73 No. 69P-16. <br />
                     Bogotá D.C. Colombia</p>
+                </div>
+                <div className="column">
+                    <h3>Mapa</h3>
+                    <ul className="footer-menu">
+                        {
+                            MenuInfo.map(item=>(
+                                <li
+                                    key={item.id}
+                                >
+                                    <Link
+                                        href={item.url}
+                                    >
+                                        <a>{item.anchor}</a>
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
                 </div>
                 <div className="column">
                     <h3>Políticas</h3>
@@ -55,7 +74,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link
-                                href="./documentos/certificado-acreditacion-onac.pdf"
+                                href="./documentos/acreditacion-onac-2023.pdf"
                             >
                                 <a target="_blank">Certificado Acreditación ONAC</a>
                             </Link>
@@ -66,8 +85,8 @@ const Footer = () => {
             
         </footer>
 
-    );
+    )
 
 }
 
-export default Footer;
+export default Footer

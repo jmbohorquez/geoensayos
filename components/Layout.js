@@ -1,7 +1,8 @@
-import { useRouter } from "next/router";
-import Head from 'next/head';
-import Header from './Header';
-import Footer from './Footer';
+import { useRouter } from "next/router"
+import Head from 'next/head'
+
+import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
 
@@ -30,8 +31,8 @@ const Layout = ({ children }) => {
 
             <Footer />
         </>
-    );
+    )
 
 }
 
-export default Layout;
+export default Layout

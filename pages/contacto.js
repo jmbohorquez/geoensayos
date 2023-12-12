@@ -1,5 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'next/image'
+
+import SEO from '../components/SEO'
 
 import Location from '../public/images/location.svg'
 import Mobile from '../public/images/smartphone.svg'
@@ -8,26 +9,20 @@ import Phone from '../public/images/phone.svg'
 const Contacto = () => {
 
     //SEO
-    const title = 'Contáctanos | Geoensayos';
-    const description = 'Contáctanos y conoce nuestro portafolio de servicios en ingeniería de materiales. Enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.';
-    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas';
-    const socialImg = '/images/meta-images/contacto.jpg';
+    const title = 'Contáctanos | Geoensayos'
+    const description = 'Contáctanos y conoce nuestro portafolio de servicios en ingeniería de materiales. Enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas.'
+    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
+    const socialImg = '/images/meta-images/contacto.jpg'
     
     return(
         <>
-            <Head>
-                <title>{ title }</title>
-                <meta name="description" content={ description } />
-                <meta name="keywords" content={ keywords } />
-                <meta httpEquiv="expires" content="43200"/>
-                <meta property="og:type" content="company" />
-                <meta property="og:title" content={ title } />
-                <meta property="og:description" content={ description } />
-                <meta property="og:image" content={ socialImg } />
-                <meta name="twitter:title" content={ title } />
-                <meta name="twitter:description" content={ description } />
-                <meta name="twitter:image" content={ socialImg } />
-            </Head>
+            <SEO 
+                title={title} 
+                description={description} 
+                keywords={keywords} 
+                socialImg={socialImg}
+            />
+
             <main className="contacto-main-container">
                 <div className="contacto-main-image-bg">
                     <Image 
@@ -67,11 +62,10 @@ const Contacto = () => {
                             height="714" 
                             scrolling="no" 
                             frameBorder="0" 
-                            src="http://arteobjeto.co/machform/embed.php?id=19282" 
+                            src="https://arteobjeto.co/machform/embed.php?id=19282" 
                             title="Geoensayos - Contacto"
                         ></iframe>
                     </div>
-
                 </div>
             </main>
         </>
@@ -79,4 +73,4 @@ const Contacto = () => {
 
 }
 
-export default Contacto;
+export default Contacto

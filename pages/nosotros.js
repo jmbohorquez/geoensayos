@@ -1,33 +1,27 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
-import ContactPanel from '../components/ContactPanel';
-import Certificaciones from '../components/Certificaciones';
+import SEO from '../components/SEO'
+import BTN from '../components/BotonComponent'
+import ContactPanel from '../components/ContactPanel'
+import Certificaciones from '../components/Certificaciones'
 
 const Nosotros = () => {
 
     //SEO
-    const title = 'Quienes somos | Geoensayos';
-    const description = 'Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.';
-    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas';
-    const socialImg = '/images/meta-images/nosotros.jpg';
+    const title = 'Quienes somos | Geoensayos'
+    const description = 'Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.'
+    const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
+    const socialImg = '/images/meta-images/nosotros.jpg'
     
     return(
         <>
-            <Head>
-                <title>{ title }</title>
-                <meta name="description" content={ description } />
-                <meta name="keywords" content={ keywords } />
-                <meta httpEquiv="expires" content="43200"/>
-                <meta property="og:type" content="company" />
-                <meta property="og:title" content={ title } />
-                <meta property="og:description" content={ description } />
-                <meta property="og:image" content={ socialImg } />
-                <meta name="twitter:title" content={ title } />
-                <meta name="twitter:description" content={ description } />
-                <meta name="twitter:image" content={ socialImg } />
-            </Head>
+            <SEO 
+                title={title} 
+                description={description} 
+                keywords={keywords} 
+                socialImg={socialImg}
+            />
 
             <section className="banner banner-nosotros banner-full">
                 <Image 
@@ -60,7 +54,7 @@ const Nosotros = () => {
                     </div>
                     <div className="nosotros-main-text">
                         <p>Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.</p>
-                        <p>El laboratorio cuenta con <Link href="./documentos/certificado-acreditacion-onac.pdf"><a target="_blank">acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC)</a></Link> bajo la norma ISO/IEC 17025:2017, requisitos generales para la competencia de los laboratorios de ensayo y calibración</p>
+                        <p>El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2023.pdf"><a target="_blank">acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC)</a></Link> bajo la norma ISO/IEC 17025:2017, requisitos generales para la competencia de los laboratorios de ensayo y calibración</p>
                         <p>Todos nuestros procesos son soportados en la normatividad vigente gracias a que está certificado en la norma NTC-ISO-9001 y acreditado por la ONAC bajo la norma ISO/IEC 17025:2017.</p>
                         <Certificaciones />
                     </div>
@@ -78,17 +72,16 @@ const Nosotros = () => {
                 <div className="nosotros-antecedentes-content-inner">
                     <div className="nosotros-antecedentes-text-container">
                         <p>Desde sus inicios ha sido un aliado para sus clientes en el control de calidad, supervisión técnica y caracterización de materiales, observando todos los estándares de calidad, eficiencia, y cumplimiento.</p>
-                        <Link
-                            href="/servicios"
-                        >
-                            <a className="btn"><span>Ver nuestros servicios</span></a>
-                        </Link>
+                        <BTN 
+                            url='/servicios'
+                            anchor='Ver nuestros servicios'
+                        />
                     </div>
                 </div>
             </section>
         </>
-    );
+    )
 
 }
 
-export default Nosotros;
+export default Nosotros
