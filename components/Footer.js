@@ -27,7 +27,7 @@ const Footer = () => {
                                     <Link
                                         href={item.url}
                                     >
-                                        <a>{item.anchor}</a>
+                                        {item.anchor}
                                     </Link>
                                 </li>
                             ))
@@ -41,42 +41,44 @@ const Footer = () => {
                             <Link
                                 href="/politica-imparcialidad"
                             >
-                                <a>Política de imparcialidad</a>
+                                Política de imparcialidad
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href="/acuerdo-confidencialidad"
                             >
-                                <a>Acuerdo de confidencialidad</a>
+                                Acuerdo de confidencialidad
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href="/politica-calidad"
                             >
-                                <a>Política calidad</a>
+                                Política calidad
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href="/quejas-reclamos"
                             >
-                                <a>Quejas y reclamos</a>
+                                Quejas y reclamos
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href="./documentos/certificado-iso-9001.pdf"
+                                target="_blank"
                             >
-                                <a target="_blank">Certificado ISO 9001</a>
+                                Certificado ISO 9001
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href="./documentos/acreditacion-onac-2023.pdf"
+                                target="_blank"
                             >
-                                <a target="_blank">Certificado Acreditación ONAC</a>
+                                Certificado Acreditación ONAC
                             </Link>
                         </li>
                     </ul>

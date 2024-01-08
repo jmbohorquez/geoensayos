@@ -2,6 +2,7 @@
 
 .banner-nosotros{
     background-color: $color-1;
+    position: relative;
 
     @media ( max-width: 812px ) and ( orientation: portrait ){
         .banner-text-container-inner{

@@ -1,16 +1,15 @@
-import Onac from '../public/images/certificado-onac.svg';
-import Iso from '../public/images/iso-9001.svg';
+import Image from 'next/image'
 
 const Certificaciones = () => {
 
     return(
         <div className="certificados-wrap">
-            <div className="certificate-container certificate-iso">
-                <Iso />
-            </div>
-            <div className="certificate-container certificate-onac">
-                <Onac />
-            </div>
+            <Image 
+                alt='Certificados ISO 9000 y Onac'
+                src='/images/certificados.png'
+                height={96}
+                width={371}
+            />
         </div>
     )
 

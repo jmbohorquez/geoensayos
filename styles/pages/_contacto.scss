@@ -1,5 +1,6 @@
 .contacto-main-container{
     position: relative;
+    width: 100%;
 }
 .contacto-main-image-bg{
     align-items: flex-end;
@@ -10,7 +11,7 @@
     width: 100%;
     z-index: -1;
 
-    div{
+    img{
         height: auto;
         width: 100%;
     }

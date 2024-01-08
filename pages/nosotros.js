@@ -27,15 +27,14 @@ const Nosotros = () => {
                 <Image 
                     src="/images/nosotros-banner-gb.jpg"
                     alt="Geoensayos, laboratorio de ensayos, altamente productivos"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={ 60 }
-                    className="banner-nosotros-bg-image"
+                    fill
+                    className="banner-nosotros-bg-image object-fit-cover"
+                    priority
                 />
                 <div className="banner-text-container center-content">
                     <div className="banner-text-container-inner">
                         <h1>Nosotros</h1>
-                        <p>Somos un laboratorio de ensayos, altamente productivos, confiables y eficaces acreditados y certificados bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.</p>
+                        <p>En GEO ENSAYOS SAS contamos con acreditación ONAC, vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017</p>
                         <ContactPanel />
                     </div>
                 </div>
@@ -46,15 +45,13 @@ const Nosotros = () => {
                         <Image 
                             src="/images/nosotros-main-content.jpg"
                             alt="Geoensayos, confiables y eficaces acreditados y certificados"
-                            layout="responsive"
                             height={ 635 }
                             width={ 488 }
-                            quality={ 50 }
                         />
                     </div>
                     <div className="nosotros-main-text">
                         <p>Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.</p>
-                        <p>El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2023.pdf"><a target="_blank">acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC)</a></Link> bajo la norma ISO/IEC 17025:2017, requisitos generales para la competencia de los laboratorios de ensayo y calibración</p>
+                        <p>El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2023.pdf" target="_blank">acreditación vigente por parte del Organismo Nacional de Acreditación (ONAC)</Link> bajo la norma ISO/IEC 17025:2017, requisitos generales para la competencia de los laboratorios de ensayo y calibración</p>
                         <p>Todos nuestros procesos son soportados en la normatividad vigente gracias a que está certificado en la norma NTC-ISO-9001 y acreditado por la ONAC bajo la norma ISO/IEC 17025:2017.</p>
                         <Certificaciones />
                     </div>
@@ -64,9 +61,8 @@ const Nosotros = () => {
                 <Image 
                     src="/images/nosotros-antecedentes-bg.jpg"
                     alt="Geoensayos, aliado para sus clientes en el control de calidad"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={ 60 }
+                    fill
+                    className="object-fit-cover"
                 />
 
                 <div className="nosotros-antecedentes-content-inner">

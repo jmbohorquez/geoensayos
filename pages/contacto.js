@@ -1,10 +1,7 @@
 import Image from 'next/image'
-
 import SEO from '../components/SEO'
 
-import Location from '../public/images/location.svg'
-import Mobile from '../public/images/smartphone.svg'
-import Phone from '../public/images/phone.svg'
+import {IconPhone, IconTelephone, IconLocation} from '../components/Icons'
 
 const Contacto = () => {
 
@@ -28,10 +25,8 @@ const Contacto = () => {
                     <Image 
                         src="/images/contacto-banner-bg.jpg"
                         alt="Geoensayos, laboratorio de ensayos, altamente productivos"
-                        layout="responsive"
                         height={ 1027 }
                         width={ 1920 }
-                        quality={ 60 }
                         className="banner-servicios-bg-image"
                     />
                 </div>
@@ -41,30 +36,21 @@ const Contacto = () => {
                         <h1>Contacto</h1>
                         <div className="contacto-medios-wrap">
                             <div className="contacto-dir contacto-item">
-                                <Location />
+                                <IconLocation />
                                 <p><strong>Dirección</strong><br />
                                 Calle 73 # 69P - 16, Bogotá D.C.</p>
                             </div>
                             <div className="contacto-moviles contacto-item">
-                                <Mobile />
+                                <IconPhone />
                                 <p><strong>Celular</strong> <br />
                                 (+57) 317 575 4994</p>
                             </div>
                             <div className="contacto-fijo contacto-item">
-                                <Phone />
+                                <IconTelephone />
                                 <p><strong>Teléfono</strong><br />
                                 (57) 1 - 320 5020</p>
                             </div>
                         </div>
-                        
-                        <p>Puedes contactarnos a través del siguiente formulario.</p>
-                        <iframe 
-                            height="714" 
-                            scrolling="no" 
-                            frameBorder="0" 
-                            src="https://arteobjeto.co/machform/embed.php?id=19282" 
-                            title="Geoensayos - Contacto"
-                        ></iframe>
                     </div>
                 </div>
             </main>

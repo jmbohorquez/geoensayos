@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Logo from '../public/images/logo.svg'
+
+import {LogoHeader} from './Icons'
 
 import MenuInfo from '../content/menu.json'
 
@@ -23,27 +24,22 @@ const Header = ({ currentPage }) => {
                     <Link
                         href="/"
                     >
-                        <a><Logo /></a>
+                        <LogoHeader />
                     </Link>
                     
                 </div>
-                <nav className={ `header-main-nav ${ showMenu ? 'show' : '' }` }>
-                    <ul className="menu">
-                        {
-                            MenuInfo.map( item => (
-                                <li 
-                                    key={item.id}
-                                    className="menu-item"
-                                >
-                                    <Link
-                                        href={item.url}
-                                    >
-                                        <a>{item.anchor}</a>
-                                    </Link>
-                                </li>
-                            ) )
-                        }
-                    </ul>
+                <nav className={ `header-main-nav menu ${ showMenu ? 'show' : '' }` }>
+                    {
+                        MenuInfo.map( item => (
+                            <Link
+                                href={item.url}
+                                key={item.id}
+                                className="menu-item"
+                            >
+                                {item.anchor}
+                            </Link>
+                        ) )
+                    }
                 </nav>
                 <div className={ `menu-boton ${ showMenu ? 'cerrar' : '' }` } onClick={ () => mostrarOcultarMenu() } >
                     <span className="bot-line line-1"></span>

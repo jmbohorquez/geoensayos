@@ -7,15 +7,17 @@
     align-items: flex-end;
     display: flex;
     justify-content: flex-start;
-    height: 100%;
+    height: calc(100% + 96px);
     width: 100%;
 }
 .banner-home-text-inner{
+    top: 0;
+    column-gap: 4rem;
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: -96px;
+    height: 110%;
     position: relative;
-    width: 92.2222%;
+    width: 90%;
 
     @media ( max-width: 812px ) and ( orientation: portrait ){
         flex-flow: column;
@@ -23,34 +25,35 @@
         padding-top: 64px;
         width: 100%;
     }
-    
-    .banner-home-image{
-        position: relative;
-        width: 68%;
+}
+.banner-home-image{
+    position: relative;
+    width: 70%;
 
-        @media ( max-width: 812px ) and ( orientation: portrait ){
-            width: 100%;
-        }
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        width: 100%;
     }
+}
 
-    .banner-home-text{
-        padding-left: 2rem;
-        width: 32%;
+.banner-home-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    padding-bottom: 118px;
+    width: 30%;
 
-        @media ( max-width: 812px ) and ( orientation: portrait ){
-            padding-left: 0;
-            padding: 0 1rem 2rem;
-            width: 100%;
-        }
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        padding-left: 0;
+        padding: 0 1rem 2rem;
+        width: 100%;
+    }
+}
+.banner-home-title{
+    font-size: 2.5rem;
 
-        .banner-home-title{
-            font-size: 2.5rem;
-
-            @media ( max-width: 812px ) and ( orientation: portrait ){
-                font-size: 1.8rem;
-                text-align: center;
-            }
-        }
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        font-size: 1.8rem;
+        text-align: center;
     }
 }
 
@@ -154,42 +157,43 @@
         flex-flow: column;
         width: 100%;
     }
+}
+.nosotros-logo{
+    align-items: center;
+    display: flex;
+    width: 25%;
+
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
     
-    .nosotros-logo{
-        width: 25%;
+    svg{
+        height: auto;
+        width: 150px;
 
         @media ( max-width: 812px ) and ( orientation: portrait ){
-            display: flex;
-            justify-content: center;
-            padding-bottom: 2rem;
-            width: 100%;
-        }
-        
-        svg{
-            height: auto;
-            width: 176px;
-
-            @media ( max-width: 812px ) and ( orientation: portrait ){
-                width: 96px;
-            }
+            width: 96px;
         }
     }
+}
 
-    .nosotros-texto{
-        border-left: solid 2px $color-4;
-        padding-left: 4rem;
-        padding-bottom: 3rem;
-        width: 75%;
+.nosotros-texto{
+    border-left: solid 2px $color-4;
+    padding: 2rem 0 2rem 4rem;
+    width: 75%;
 
-        @media ( max-width: 812px ) and ( orientation: portrait ){
-            border: none;
-            margin: auto;
-            padding: 0;
-            width: 80%;
-        }
+    @media ( max-width: 812px ) and ( orientation: portrait ){
+        border: none;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+    }
 
-        p{
-            color: #FFF;
-        }
+    p{
+        color: #FFF;
+        margin-top: 0;
     }
 }

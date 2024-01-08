@@ -4,10 +4,9 @@ const BTN = ({url, anchor}) => {
     return(
         <Link
             href={url}
+            className="btn btn-primary btn-animate"
         >
-            <a className="btn">
-                <span>{anchor}</span>
-            </a>
+            {anchor}
         </Link>
     )
 }

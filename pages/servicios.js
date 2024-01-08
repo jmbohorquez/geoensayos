@@ -2,12 +2,7 @@ import Image from 'next/image'
 
 import SEO from '../components/SEO'
 
-import Concreto from '../public/images/serv-concreto.svg'
-import Asfalto from '../public/images/serv-asfalto.svg'
-import Suelos from '../public/images/serv-suelos.svg'
-import Apiques from '../public/images/serv-apiques.svg'
-import Laboratorio from '../public/images/serv-laboratorio.svg'
-import Supervision from '../public/images/serv-supervision.svg'
+import {IconConcreto, IconAsfalto, IconSuelos, IconApiques, IconLaboratorio, IconSupervision} from '../components/Icons'
 
 
 const Servicios = () => {
@@ -31,10 +26,8 @@ const Servicios = () => {
                 <Image 
                     src="/images/servicios-banner-bg.jpg"
                     alt="Geoensayos, laboratorio de ensayos, altamente productivos"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={ 60 }
-                    className="banner-servicios-bg-image"
+                    fill
+                    className="banner-servicios-bg-image object-fit-cover"
                 />
                 <div className="banner-text-container center-content">
                     <div className="banner-text-container-inner">
@@ -47,19 +40,19 @@ const Servicios = () => {
                 <div className="servicios-inner">
                     <div className="column">
                         <div className="serv-icon">
-                            <Concreto />
+                            <IconConcreto />
                         </div>
                         <p>Concretos</p>
                     </div>
                     <div className="column">
                         <div className="serv-icon">
-                            <Suelos />
+                            <IconSuelos />
                         </div>
                         <p>Suelos y agregados</p>
                     </div>
                     <div className="column">
                         <div className="serv-icon">
-                            <Asfalto />
+                            <IconAsfalto />
                         </div>
                         <p>Mezclas asfálticas densas en caliente</p>
                     </div>
@@ -70,19 +63,19 @@ const Servicios = () => {
                 <div className="servicios-inner">
                     <div className="column">
                         <div className="serv-icon">
-                            <Laboratorio />
+                            <IconLaboratorio />
                         </div>
                         <p>Montaje de equipo de laboratorio en sitio.</p>
                     </div>
                     <div className="column">
                         <div className="serv-icon">
-                            <Supervision />
+                            <IconSupervision />
                         </div>
                         <p>Supervisión, control y seguimiento al plan de inspección y ensayos en Obra.</p>
                     </div>
                     <div className="column">
                         <div className="serv-icon">
-                            <Apiques />
+                            <IconApiques />
                         </div>
                         <p>Ejecución de apiques</p>
                     </div>

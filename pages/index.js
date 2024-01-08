@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import SEO from '../components/SEO'
 import BTN from '../components/BotonComponent'
-import LogoB from '../public/images/logo-b.svg'
+import {LogoWhite} from '../components/Icons'
 import Certificaciones from '../components/Certificaciones'
 
 import ContactPanel from '../components/ContactPanel'
@@ -28,10 +28,9 @@ export default function Home() {
                 <Image 
                     src="/images/inicio-cabecera-bg.jpg"
                     alt="Laboratorio de pruebas Geotécnicas"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={60}
-                    className="banner-image-bg"
+                    fill
+                    className="object-fit-cover mix-blend-overlay"
+                    priority
                 />
                 <div className="banner-text-container banner-home-text-container">
                     <div className="banner-home-text-inner">
@@ -39,15 +38,15 @@ export default function Home() {
                             <Image 
                                 src="/images/inicio-cabecera-imagen.jpg"
                                 alt="Geoensayos, laboratorio de ensayos geológicos"
-                                layout="responsive"
                                 height={ 644 }
                                 width={ 912 }
-                                quality={ 40 }
+                                className="object-fit-cover"
+                                priority
                             />
                         </div>
                         <div className="banner-home-text">
                             <h1 className="banner-home-title">Ingeniería de materiales</h1>
-                            <p className="banner-home-description">Somos una fábrica de ensayos para el sector construcción, altamente productiva, confiable y eficaz. Con un portafolio de 23 ensayos acreditados por la ONAC bajo la norma NTC/IEC 17025:2017 y todos sus ensayos y servicios y certificados bajo la norma ISO:9001:2015</p>
+                            <p className="banner-home-description">Somos una fábrica de ensayos para el sector construcción, altamente productiva, confiable y eficaz. “En GEO ENSAYOS SAS contamos con acreditación ONAC, vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017</p>
                             <ContactPanel />
                         </div>
                     </div>
@@ -74,15 +73,14 @@ export default function Home() {
                     <Image 
                         src="/images/inicio-quienes-somos-bg.jpg"
                         alt="Geoensayos, un laboratorio de ingeniería de materiales"
-                        layout="fill"
-                        objectFit="cover"
-                        quality={ 40 }
+                        fill
+                        className='object-fit-cover'
                     />
                     <div className="inicio-nosotros-inner">
                         <h2 className="titulo-cuadrado"><span className="titulo-numero">02_</span> Quienes somos</h2>
                         <div className="inicio-nosotros-text-container">
                             <div className="nosotros-logo">
-                                <LogoB />
+                                <LogoWhite />
                             </div>
                             <div className="nosotros-texto">
                                 <p>GEO ENSAYOS SAS es un laboratorio de ingeniería de materiales enfocado en el procesamiento de concretos, suelos, agregados y mezclas asfálticas con altos estándares de calidad, y conceptos técnicos de valor añadido…</p>
@@ -95,7 +93,6 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            
         </>
     )
 }

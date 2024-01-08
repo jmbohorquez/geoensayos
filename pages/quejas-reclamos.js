@@ -26,7 +26,7 @@ const QuejasReclamos = () => {
                 <div className="legales-main-inner">
                     <p>Cuando se presente un reclamo, queja o requerimiento deberá acudir a una instancia imparcial y competente, correo electrónico direccionlaboratorio@geoensayos.com o gerencia@geoensayos.com.</p>
                     <p>Vía telefónica [57] 1 320 5020 o [57] 1 317 575 4994</p>
-                    <p>Toda la información del cliente obtenida durante el proceso de quejas y reclamos, requerimientos y demás será manejada de acuerdo con nuestras <Link href="/acuerdo-confidencialidad"><a>políticas de confidencialidad</a></Link> e <Link href="/politica-imparcialidad"><a>imparcialidad</a></Link></p>
+                    <p>Toda la información del cliente obtenida durante el proceso de quejas y reclamos, requerimientos y demás será manejada de acuerdo con nuestras <Link href="/acuerdo-confidencialidad">políticas de confidencialidad</Link> e <Link href="/politica-imparcialidad">imparcialidad</Link></p>
                     <p><strong>Gracias</strong></p>
                     <div className="formulario-quejas-reclamos">
                         <p>Puede enviarnos su queja o reclamo a través del siguiente formulario</p>
