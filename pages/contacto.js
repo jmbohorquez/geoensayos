@@ -45,10 +45,10 @@ const Contacto = () => {
                                 <p><strong>Celular</strong> <br />
                                 (+57) 317 575 4994</p>
                             </div>
-                            <div className="contacto-fijo contacto-item">
-                                <IconTelephone />
-                                <p><strong>Teléfono</strong><br />
-                                (57) 1 - 320 5020</p>
+                            <div className="contacto-moviles contacto-item">
+                                <IconPhone />
+                                <p><strong>Celular</strong> <br />
+                                (+57) 316 850 1923</p>
                             </div>
                         </div>
                     </div>
