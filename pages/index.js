@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Fade } from 'react-slideshow-image';
 
 import SEO from '../components/SEO'
 import BTN from '../components/BotonComponent'
@@ -6,6 +7,7 @@ import {LogoWhite} from '../components/Icons'
 import Certificaciones from '../components/Certificaciones'
 
 import ContactPanel from '../components/ContactPanel'
+import HomeImageSlider from '../components/HomeImageSlider';
 
 export default function Home() {
     
@@ -35,18 +37,11 @@ export default function Home() {
                 <div className="banner-text-container banner-home-text-container">
                     <div className="banner-home-text-inner">
                         <div className="banner-home-image">
-                            <Image 
-                                src="/images/inicio-cabecera-imagen.jpg"
-                                alt="Geoensayos, laboratorio de ensayos geológicos"
-                                height={ 644 }
-                                width={ 912 }
-                                className="object-fit-cover"
-                                priority
-                            />
+                        <HomeImageSlider />
                         </div>
                         <div className="banner-home-text">
                             <h1 className="banner-home-title">Ingeniería de materiales</h1>
-                            <p className="banner-home-description">Somos una fábrica de ensayos para el sector construcción, altamente productiva, confiable y eficaz. “En GEO ENSAYOS SAS contamos con acreditación ONAC, vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017</p>
+                            <p className="banner-home-description">En GEO ENSAYOS SAS contamos con acreditación ONAC, vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017</p>
                             <ContactPanel />
                         </div>
                     </div>

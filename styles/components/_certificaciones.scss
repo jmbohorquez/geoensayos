@@ -1,12 +1,21 @@
 .certificados-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+
     @media ( max-width: 600px ) and ( orientation: portrait ){
         margin: auto;
         padding: .5rem 0;
         width: 100%;
 
-        img{
-            height: auto;
-            width: 100%;
-        }
+        
+    }
+}
+.certificados-item{
+    height: 80px;
+
+    svg{
+        height: 100%;
+        width: auto;
     }
 }

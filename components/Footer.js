@@ -12,7 +12,6 @@ const Footer = () => {
                     <p>http://www.geoensayos.com <br />
                     Todos los derechos reservados { new Date().getFullYear() }</p>
                     <p><strong>Celular:</strong> (+57) 317 575 4994 <br />
-                    <strong>Teléfono:</strong> (+57) 1 - 320 5020 <br />
                     <strong>Dirección:</strong> Calle 73 No. 69P-16. <br />
                     Bogotá D.C. Colombia</p>
                 </div>
@@ -63,14 +62,6 @@ const Footer = () => {
                                 href="/quejas-reclamos"
                             >
                                 Quejas y reclamos
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="./documentos/certificado-iso-9001.pdf"
-                                target="_blank"
-                            >
-                                Certificado ISO 9001
                             </Link>
                         </li>
                         <li>

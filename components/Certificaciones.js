@@ -1,15 +1,15 @@
-import Image from 'next/image'
+import {OnacCertificate, LogoHeader} from './Icons'
 
 const Certificaciones = () => {
 
     return(
         <div className="certificados-wrap">
-            <Image 
-                alt='Certificados ISO 9000 y Onac'
-                src='/images/certificados.png'
-                height={96}
-                width={371}
-            />
+            <div className="certificados-item">
+                <OnacCertificate />
+            </div>
+            <div className="certificados-item">
+                <LogoHeader />
+            </div>
         </div>
     )
 
