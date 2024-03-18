@@ -69,7 +69,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link
-                                href="./documentos/acreditacion-onac-2023.pdf"
+                                href="./documentos/20-lab-013-certificado-acreditacion-geoensayos.pdf"
                                 target="_blank"
                             >
                                 Certificado Acreditación ONAC

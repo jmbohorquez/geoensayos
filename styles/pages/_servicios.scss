@@ -1,5 +1,8 @@
 @use '../abstract/colors' as *;
 
+.banner-servicios{
+    position: relative;
+}
 .serv-container{
     align-items: center;
     display: flex;

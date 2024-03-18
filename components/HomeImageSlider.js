@@ -21,8 +21,11 @@ const HomeImageSlider = () => {
             <Fade {...properties}>
             {
                 images.map((each, index) => (
-                    <div className="home-slide-image">
-                        <img key={index} style={{width: "100%"}} src={`/images/${each}`} />
+                    <div 
+                        key={index}
+                        className="home-slide-image"
+                    >
+                        <img  style={{width: "100%"}} src={`/images/${each}`} />
                     </div>
                 ))
             }
