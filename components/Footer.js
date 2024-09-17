@@ -11,10 +11,8 @@ const Footer = () => {
                 <div className="column">
                     <p>http://www.geoensayos.com <br />
                     Todos los derechos reservados { new Date().getFullYear() }</p>
-                    <p><strong>Celular:</strong> (+57) 317 575 4994 <br />
-                    <strong>Celular:</strong> (+57) 316 850 1923  <br />
-                    <strong>Email:</strong> comercial@geoensayos.co <br /> 
-                    <strong>Email:</strong> direccionlaboratorio@geoensayos.com <br /> 
+                    <p><strong>Celular:</strong> (+57) 317 516 0345<br />
+                    <strong>Email:</strong> direccioncomercial@geoensayos.co <br />
                     <strong>Dirección:</strong> Calle 73 No. 69P-16. <br />
                     Bogotá D.C. Colombia</p>
                 </div>

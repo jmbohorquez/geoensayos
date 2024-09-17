@@ -43,12 +43,7 @@ const Contacto = () => {
                             <div className="contacto-moviles contacto-item">
                                 <IconPhone />
                                 <p><strong>Celular</strong> <br />
-                                (+57) 317 575 4994</p>
-                            </div>
-                            <div className="contacto-moviles contacto-item">
-                                <IconPhone />
-                                <p><strong>Celular</strong> <br />
-                                (+57) 316 850 1923</p>
+                                (+57) 317 516 0345</p>
                             </div>
                         </div>
                     </div>
