@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import Head from 'next/head'
 
 import Header from './Header'
+import WhatsappBTN from "./WhatsappBTN"
 import Footer from './Footer'
 
 const Layout = ({ children }) => {
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
             />
 
             { children }
-
+            <WhatsappBTN />
             <Footer />
         </>
     )

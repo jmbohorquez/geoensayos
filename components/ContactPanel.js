@@ -5,7 +5,7 @@ const ContactPanel = () => {
     return(
         <div className="contact-data-wrap">
             <h3>Contactános</h3>
-            <p><span className="icon"><IconPhone /></span> (+57) 317 516 0345</p>
+            <p><span className="icon"><IconPhone /></span> (+57) 310 305 4570</p>
         </div>
     )
 
