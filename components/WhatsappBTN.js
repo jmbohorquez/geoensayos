@@ -17,7 +17,7 @@ const IconWhatsapp = () => {
 const WhatsappBTN = () => {
     return(
         <a
-            href='https://wa.me/573103054570'
+            href='https://wa.me/573168501923'
             target='_blank'
             className={ styles.btn }
         >

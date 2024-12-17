@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Fade } from 'react-slideshow-image';
 
 import SEO from '../components/SEO'
 import BTN from '../components/BotonComponent'
@@ -13,7 +12,7 @@ export default function Home() {
     
     //SEO
     const title = 'Geoensayos, laborato de pruebas geológicas'
-    const description = 'Somos una fábrica de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017 e ISO 9001:2015.'
+    const description = 'Somos un laboratorio de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017'
     const keywords = 'ensayos, geología, laboratorio, materiales, ingenieria, ingenieria de materiales, concretos, suelos, mezclas asfálticas'
     const socialImg = '/images/meta-images/inicio.jpg'
     
