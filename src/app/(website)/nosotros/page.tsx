@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { ContactPanel } from '../../../components/ContactPanel';
-import Certificaciones from '../../../components/Certificaciones';
+import { Certificaciones } from '../../../components/Certificaciones';
 import { BTN } from '../../../components/BotonComponent';
 
 export const metadata: Metadata = {
