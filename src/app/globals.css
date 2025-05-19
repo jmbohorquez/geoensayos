@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root{
+    --color-1: #FAB279;
+    --color-2: #C4C4BB;
+    --color-3: #606062;
+    --color-4: #F58634;
+    --color-5: #A85113;
+    --color-6: #333;
+}
+
+.list-icon svg{
+    height: 20px;
+    width: auto;
+}
+
+/*---------------------------------------------- Home Slider*/
+.home-slide, 
+.home-slide > div, 
+.home-slide .react-slideshow-container, 
+.home-slide .react-slideshow-fadezoom-wrapper,
+.home-slide .react-slideshow-fadezoom-images-wrap{
+    height: 100vh;
+}
+
+.home-slide img{
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    width: auto;
+}
+
