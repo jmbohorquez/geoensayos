@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import { LogoWhite, IconCheck } from "../../components/Icons";
@@ -6,6 +7,11 @@ import { HomeImageSlider } from "../../components/HomeImageSlider";
 import { BTN } from "../../components/BotonComponent";
 import { Certificaciones } from "../../components/Certificaciones";
 import { BTNWhatsappText } from "../../components/cta/BTNWhatsappText";
+
+export const metadata: Metadata = {
+    title: "Laboratorio de suelos, concretos y mezclas asfálticas | Geoensayos",
+    description: "Ofrecemos ensayos de laboratorio aplicados a materiales del sector construcción a través de servicios de supervisión, control al plan de inspección y ensayos, laboratorios en obra."
+}
 
 export default function HomePage() {
     return (

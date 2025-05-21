@@ -41,8 +41,8 @@ export default function NosotrosPage(){
                         />
                     </div>
                     <div className="nosotros-main-text">
-                        <p>Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.</p>
-                        <p>El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2023.pdf" target="_blank">acreditación</Link> por parte del Organismo Nacional de Acreditación (ONAC), vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017.</p>
+                        <p className="mb-4">Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.</p>
+                        <p className="mb-4">El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2025.pdf" target="_blank">acreditación</Link> por parte del Organismo Nacional de Acreditación (ONAC), vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017.</p>
                         <Certificaciones />
                     </div>
                 </div>

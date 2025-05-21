@@ -13,9 +13,9 @@ export default function politicaCalidadPage(){
             </section>
             <main className="legales-main-content">
                 <div className="legales-main-inner">
-                    <p>GEO ENSAYOS SAS es un laboratorio de ingeniería de ensayos enfocado en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con altos estándares de calidad, imparcialidad, confidencialidad, competencia, y coherencia en su operación, atributos que le aportan valor a sus clientes.</p>
-                    <p>Somos una fábrica en ingeniería de ensayos altamente productiva, confiable y con conceptos técnicos de valor añadido, buscamos la satisfacción de nuestras partes interesadas, contando con los recursos necesarios, el personal competente, la infraestructura requerida y la trazabilidad a nuestros procesos. </p>
-                    <p>El compromiso de la alta dirección con la mejora continua es una constante en la organización, a través del cumplimiento del sistema de gestión de calidad basado en la norma ISO/IEC 17025:2017, la normatividad técnica aplicable y los requisitos del ente acreditador, los legales y reglamentarios.</p>
+                    <p className="mb-4">GEO ENSAYOS SAS es un laboratorio de ingeniería de ensayos enfocado en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con altos estándares de calidad, imparcialidad, confidencialidad, competencia, y coherencia en su operación, atributos que le aportan valor a sus clientes.</p>
+                    <p className="mb-4">Somos una fábrica en ingeniería de ensayos altamente productiva, confiable y con conceptos técnicos de valor añadido, buscamos la satisfacción de nuestras partes interesadas, contando con los recursos necesarios, el personal competente, la infraestructura requerida y la trazabilidad a nuestros procesos. </p>
+                    <p className="mb-4">El compromiso de la alta dirección con la mejora continua es una constante en la organización, a través del cumplimiento del sistema de gestión de calidad basado en la norma ISO/IEC 17025:2017, la normatividad técnica aplicable y los requisitos del ente acreditador, los legales y reglamentarios.</p>
                     <p className="firma"><strong>Juan Sebastian Villamil</strong><br />
                     Gerente General</p>
                 </div>
