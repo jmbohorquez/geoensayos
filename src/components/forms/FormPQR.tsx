@@ -216,9 +216,9 @@ export const FormPQR = () => {
                             ( formResponse == 'ok' )
                             ?
                                 <>
-                                    <h2 className='text-color-1 text-align-center'>¡El mensaje se ha enviado!</h2>
-                                    <p className='text-align-center'>Daremos proceso a tu PQR y nos pondremos en contacto en el menor tiempo posible. <br />
-                                    <strong>No dudes en contactarnos</strong> si necesitas más información o asistencia.</p>
+                                    <h2 className='text-center text-2xl font-bold'>¡El mensaje se ha enviado!</h2>
+                                    <p className='text-center mb-4'>Daremos proceso a tu PQR y nos pondremos en contacto en el menor tiempo posible. </p>
+                                    <p><strong>No dudes en contactarnos</strong> si necesitas más información o asistencia.</p>
                                 </>
                             :
                                 ( formResponse == 'error-send' )

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-//import { FormPQR } from "../../../components/forms/FormPQR";
+import { FormPQR } from "../../../components/forms/FormPQR";
 
 export const metadata: Metadata = {
     title: "Quejas y r6eclamos | Geoensayos",
@@ -20,7 +20,7 @@ export default function QuejasReclamosPage(){
                     <p className="mb-4">Toda la información del cliente obtenida durante el proceso de quejas y reclamos, requerimientos y demás será manejada de acuerdo con nuestras <Link href="/acuerdo-confidencialidad">políticas de confidencialidad</Link> e <Link href="/politica-imparcialidad">imparcialidad</Link></p>
                     <p className="mb-4"><strong>Gracias</strong></p>
                     <div className="formulario-quejas-reclamos">
-                        {/* <FormPQR /> */}
+                        <FormPQR />
                     </div>
                 </div>
             </main>
