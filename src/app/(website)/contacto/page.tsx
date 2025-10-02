@@ -18,22 +18,22 @@ export default function ContactoPage(){
                         alt="Geoensayos, laboratorio de ensayos, altamente productivos"
                         height={ 1027 }
                         width={ 1920 }
-                        className="banner-servicios-bg-image"
+                        className="banner-servicios-bg-image mix-blend-multiply"
                     />
                 </div>
                 
                 <div className="contacto-main-inner">
                     <div className="contacto-content">
-                        <h1>Contacto</h1>
+                        <h1 className="text-white text-4xl">Contacto</h1>
                         <div className="contacto-medios-wrap">
-                            <div className="contacto-dir contacto-item">
+                            <div className="contacto-dir contacto-item svg-white">
                                 <IconLocation />
-                                <p><strong>Dirección</strong><br />
+                                <p className="text-white"><strong>Dirección</strong><br />
                                 Calle 73 # 69P - 16, Bogotá D.C.</p>
                             </div>
-                            <div className="contacto-moviles contacto-item">
+                            <div className="contacto-moviles contacto-item svg-white">
                                 <IconPhone />
-                                <p><strong>Celular</strong> <br />
+                                <p className="text-white"><strong>Celular</strong> <br />
                                 (+57) 310 305 4570</p>
                             </div>
                         </div>

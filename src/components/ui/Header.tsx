@@ -31,13 +31,14 @@ export const Header = () => {
                 <nav className={ `header-main-nav menu ${ showMenu ? 'show' : '' }` }>
                     {
                         MenuInfo.map( item => (
-                            <Link
-                                href={item.url}
-                                key={item.id}
-                                className="menu-item"
-                            >
-                                {item.anchor}
-                            </Link>
+                            item.anchor !== 'Inicio' &&
+                                <Link
+                                    href={ item.url }
+                                    key={ item.id }
+                                    className="menu-item"
+                                >
+                                    {item.anchor}
+                                </Link>
                         ) )
                     }
                 </nav>

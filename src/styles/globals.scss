@@ -1,5 +1,3 @@
-@forward './basics/tags';
-
 /* ======================================= Header */
 
 @forward './layout/header';
@@ -25,17 +23,9 @@
 
 @forward './layout/columns';
 
-/* ======================================= Inicio */
-
-@forward './pages/inicio';
-
 /* ======================================= Nosotros */
 
 @forward './pages/nosotros';
-
-/* ======================================= Servicios */
-
-@forward './pages/servicios';
 
 /* ======================================= Contacto */
 
@@ -44,10 +34,6 @@
 /* ======================================= Legales */
 
 @forward './pages/legales';
-
-/* ======================================= Footer */
-
-@forward './layout/footer';
 
 /* ======================================= Legales */
 

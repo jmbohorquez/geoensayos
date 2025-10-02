@@ -7,6 +7,9 @@
     --color-4: #F58634;
     --color-5: #A85113;
     --color-6: #333;
+    --color-7: #6f6f3a;
+    --color-8: #e9e9df;
+    --color-9: #c5c5bc;
 }
 
 .list-icon svg{
@@ -28,5 +31,10 @@
     object-fit: cover;
     object-position: right;
     width: auto;
+}
+
+/*---------------------------------------------- SVG */
+.svg-white svg{
+    fill: white;
 }
 

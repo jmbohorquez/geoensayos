@@ -49,7 +49,43 @@
     </url>
     <url>
         <loc>https://www.geoensayos.co/servicios</loc>
-        <lastmod>2021-08-17T19:03:37.358Z</lastmod>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/concretos</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/suelos-y-agregados</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/mezclas-asfalticas</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/laboratorio-en-sitio</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/supervision-y-control-en-obra</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
+        <changefreq> monthly </changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.geoensayos.co/servicios/ejecucion-de-apiques</loc>
+        <lastmod>2025-10-02T10:03:37.358Z</lastmod>
         <changefreq> monthly </changefreq>
         <priority>1.0</priority>
     </url>

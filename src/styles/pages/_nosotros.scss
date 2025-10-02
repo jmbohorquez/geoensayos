@@ -1,7 +1,7 @@
 @use '../abstract/colors' as *;
 
 .banner-nosotros{
-    background-color: $color-1;
+    background-color: $color-6;
     position: relative;
 
     @media ( max-width: 812px ) and ( orientation: portrait ){

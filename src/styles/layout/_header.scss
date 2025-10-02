@@ -2,7 +2,6 @@
 
 .header{
     top: 0;
-    padding: 1rem 0;
     position: absolute;
     width: 100%;
     z-index: 9999;
@@ -17,13 +16,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 84.4444%;
-
-    @media ( max-width: 812px ) and ( orientation: portrait ){
-        width: 100%;
-    }
-      
+    padding: 1rem 2rem;
 }
 .header-logo-container{
     height: 60px;

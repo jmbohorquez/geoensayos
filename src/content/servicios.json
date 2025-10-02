@@ -1,0 +1,100 @@
+[
+    {
+        "slug":"concretos",
+        "metaTitle":"Pruebas para concretos | Geoensayos",
+        "metaDescription":"El concreto es el corazón de cualquier obra civil: sostiene estructuras, recibe cargas y asegura la vida útil de un proyecto. Pero no siempre la mezcla que llega a obra cumple lo prometido. Si no se controla su calidad, pueden aparecer problemas como grietas, deformaciones o incluso fallas estructurales.",
+        "heroTitle": "Concretos",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\">¿Tu concreto tiene la resistencia necesaria para que tu obra sea segura y duradera?</p><p className=\"text-white text-lg md:text-xl font-light mb-8\">En Geoensayos verificamos la calidad de tus mezclas para evitar fallas y sobrecostos en construcción.</p>",
+        "textIntro": "<strong>El concreto es el corazón de cualquier obra civil:</strong> sostiene estructuras, recibe cargas y asegura la vida útil de un proyecto. Pero no siempre la mezcla que llega a obra cumple lo prometido. Si no se controla su calidad, pueden aparecer problemas como grietas, deformaciones o incluso fallas estructurales.",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "textoCopy": "En Geoensayos realizamos ensayos de laboratorio que permiten comprobar la resistencia, trabajabilidad y durabilidad del concreto. De esta manera, ayudamos a nuestros clientes a detectar a tiempo errores en la mezcla o en el proceso constructivo, garantizando estructuras más seguras, eficientes y confiables.",
+        "pruebas": [
+            "Compresión de cilindros",
+            "Flexión de vigas",
+            "Ensayo de asentamiento",
+            "Tracción indirecta",
+            "Extracción de núcleos de concreto",
+            "Falla de cubos de mortero",
+            "Diseño de mezcla de concreto"
+        ],
+        "metodologias": "Nuestros ensayos de concreto se realizan siguiendo las normas INVÍAS y NTC vigentes, lo que asegura que los resultados reflejen el comportamiento real del material en obra y brinden confianza en la calidad estructural.",
+        "casoReal": "<p className=\"text-white text-xl font-light mb-4\">En la construcción de un edificio de cinco pisos, los ensayos de compresión revelaron que las columnas recién fundidas tenían una resistencia de solo 18 MPa, cuando lo exigido eran 28 MPa a los 28 días. Gracias a esta detección temprana se descubrió que la mezcla se estaba elaborando con demasiada agua. </p><p className=\"text-white text-xl font-light mb-8\">La corrección inmediata evitó el uso de un concreto deficiente que habría puesto en riesgo la seguridad de la estructura y generado altos sobrecostos.</p>"
+    },
+    {
+        "slug":"suelos-y-agregados",
+        "metaTitle":"Pruebas para Suelos y agregados | Geoensayos",
+        "metaDescription":"En Geoensayos verificamos suelos y agregados para que tu proyecto no sufra hundimientos, fisuras ni fallas prematuras.",
+        "heroTitle": "Suelos y agregados",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\"></p><p className=\"text-white text-lg md:text-xl font-light mb-8\"></p>",
+        "textIntro": "<strong>El suelo y los agregados son la base de toda obra civil,</strong> especialmente en proyectos viales. Si no se analizan con rigor, pueden aparecer deformaciones, baches, asentamientos diferenciales o incluso fallas estructurales en el pavimento.",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "textoCopy": "En Geoensayos realizamos ensayos que permiten caracterizar el terreno, evaluar la capacidad portante y comprobar que los materiales cumplen con las especificaciones técnicas. Con esto ayudamos a prevenir sobrecostos por reparaciones, retrasos en obra y riesgos de durabilidad en la infraestructura.",
+        "pruebas": [
+            "Granulometría (tamizado e hidrómetro)",
+            "Límites de Atterberg",
+            "Proctor estándar y modificado",
+            "CBR – California Bearing Ratio",
+        ],
+        "metodologias": "",
+        "casoReal": ""
+    },
+    {
+        "slug":"",
+        "metaTitle":"",
+        "metaDescription":"",
+        "heroTitle": "",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\"></p><p className=\"text-white text-lg md:text-xl font-light mb-8\"></p>",
+        "textIntro": "",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "textoCopy": "",
+        "pruebas": [
+            "",
+        ],
+        "metodologias": "",
+        "casoReal": ""
+    },
+    {
+        "slug":"",
+        "metaTitle":"",
+        "metaDescription":"",
+        "heroTitle": "",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\"></p><p className=\"text-white text-lg md:text-xl font-light mb-8\"></p>",
+        "textIntro": "",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "pruebas": [
+            "",
+        ],
+        "metodologias": "",
+        "casoReal": ""
+    },
+    {
+        "slug":"",
+        "metaTitle":"",
+        "metaDescription":"",
+        "heroTitle": "",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\"></p><p className=\"text-white text-lg md:text-xl font-light mb-8\"></p>",
+        "textIntro": "",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "textoCopy": "",
+        "pruebas": [
+            "",
+        ],
+        "metodologias": "",
+        "casoReal": ""
+    },
+    {
+        "slug":"",
+        "metaTitle":"",
+        "metaDescription":"",
+        "heroTitle": "",
+        "heroCopy": "<p className=\"text-white text-lg md:text-xl font-bold mb-2\"></p><p className=\"text-white text-lg md:text-xl font-light mb-8\"></p>",
+        "textIntro": "",
+        "imageText": "prueba-resistencia-cilindro-concreto.jpg",
+        "textoCopy": "",
+        "pruebas": [
+            "",
+        ],
+        "metodologias": "",
+        "casoReal": ""
+    }
+]
