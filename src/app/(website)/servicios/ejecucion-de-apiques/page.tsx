@@ -26,7 +26,7 @@ export default function EjecucionDeApiquesPage(){
                 <div className="absolute h-full w-full top-0 p-8">
                     <div className="h-full flex flex-col justify-center w-full lg:w-1/3">
                         <p className="text-[#b8b874] text-xl md:text-2xl/tight tracking-wide font-[800]">Geoensayos - Servicios</p>
-                        <h1 className="text-white text-5xl md:text-6xl/14 mb-4">Ejecución de apiques</h1>
+                        <h1 className="text-white text-5xl md:text-6xl/14 mb-4">Ejecución de apiques y sondeos</h1>
                         <p className="text-white text-lg md:text-xl font-bold mb-2">¿Conoces realmente qué hay bajo el terreno donde vas a construir?</p>
                         <p className="text-white text-lg md:text-xl font-light mb-8">En Geoensayos realizamos apiques que revelan las condiciones del suelo para tomar decisiones seguras en diseño y construcción.</p>
                         <BTNWhatsappText 

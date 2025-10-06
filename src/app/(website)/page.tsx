@@ -61,7 +61,7 @@ const servicios = [
     },
     {
         "id": 6,
-        "name": "Ejecución de apiques",
+        "name": "Ejecución de apiques y sondeos",
         "icon": <IconApiques className="h-16 fill-[var(--color-7)] group-hover:fill-[var(--color-4)] transition-colors" />,
         "description": "Hacemos excavaciones que revelan el terreno y permiten decisiones seguras en diseño y construcción.",
         "link": "/servicios/ejecucion-de-apiques"

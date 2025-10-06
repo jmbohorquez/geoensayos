@@ -78,7 +78,7 @@ export default function MezclasAsfalticasPage(){
                             </li>
                             <li className="flex flex-row items-center gap-4 mb-4">
                                 <IconCheck className="fill-white md:fill-black h-5" />
-                                <span className="flex-1">Ensayo de resistencia a la tracción indirecta (IDT)</span>
+                                <span className="flex-1">Ensayo de resistencia a la tracción indirecta (TSR)</span>
                             </li>
                             <li className="flex flex-row items-center gap-4 mb-4">
                                 <IconCheck className="fill-white md:fill-black h-5" />

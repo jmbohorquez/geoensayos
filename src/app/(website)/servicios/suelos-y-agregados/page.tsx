@@ -84,10 +84,6 @@ export default function ConcretoPage(){
                                 <IconCheck className="fill-white md:fill-black h-5" />
                                 <span className="flex-1">Compresión inconfinada</span>
                             </li>
-                            <li className="flex flex-row items-center gap-4 mb-4">
-                                <IconCheck className="fill-white md:fill-black h-5" />
-                                <span className="flex-1">Permeabilidad</span>
-                            </li>
                         </ul>
                         <h3 className="text-3xl text-white md:text-black mb-4">Ensayos en agregados:</h3>
                         <ul className="text-white text-lg md:text-2xl pl-1 font-light">
