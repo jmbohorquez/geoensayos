@@ -7,7 +7,7 @@ import Logo from "../../public/images/logo.svg";
 export const Certificaciones = () => {
 
     return(
-        <div className="flex flex-row gap-6 w-71.25 pt-4">
+        <div className="flex flex-row gap-2.5 pt-4">
             <div className="w-[72.5px]">
                 <Link href="./documentos/iso-9001-2015-icontec.pdf" target="_blank">
                     <Iso90001 />
@@ -18,7 +18,7 @@ export const Certificaciones = () => {
                     <OnacCertificate />
                 </Link>
             </div>
-            <div className="w-[110px]">
+            <div className="w-27.5">
                 <Logo className="w-full" />
             </div>
         </div>

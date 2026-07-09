@@ -94,25 +94,25 @@ export default function HomePage() {
             </section>
             <main>
                 <div className="bg-[#e9e9df] flex flex-col lg:flex-row gap-16 px-8 py-24">
-                    <div className="w-full lg:w-1/6">
+                    <div className="w-full lg:w-2/6">
                         <h2 className="text-[#93938c] text-[9vw] lg:text-[3.8vw]/16 mb-4">Nuestros <span className="text-black">Servicios</span></h2>
                         <p className="text-2xl font-light mb-4">Aseguramos la calidad de tus materiales y el control técnico en cada etapa de tu proyecto. Descubre cómo podemos ayudarte.</p>
                         <Certificaciones />
                     </div>
-                    <div className="flex-full lg:w-5/6 flex flex-col md:flex-row flex-wrap justify-between gap-y-8">
+                    <div className="flex-full lg:w-4/6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                         {
                             servicios.map( servicio => (
                                 <Link
                                     href={ servicio.link } 
                                     key={ servicio.id } 
-                                    className="w-full md:w-[48%] lg:w-[31%] bg-white p-8 rounded-md shadow-lg group transition-all hover:shadow-xl hover:-translate-y-2"
+                                    className="w-full bg-white p-8 rounded-md shadow-lg group transition-all hover:shadow-xl hover:-translate-y-2"
                                 >
                                     { servicio.icon }
                                     <h3 className="text-[#333] text-3xl font-bold my-4">{ servicio.name }</h3>
                                     <p className="text-black text-lg font-light mb-8">{ servicio.description }</p>
                                     <span className="flex flex-row items-center gap-1 transition-all group-hover:ml-1">
-                                        <span className="text-lg block group-hover:text-[var(--color-4)]">Saber más</span>
-                                        <IconArrow className="h-3 w-auto block fill-black group-hover:fill-[var(--color-4)]" />
+                                        <span className="text-lg block group-hover:text-(--color-4)">Saber más</span>
+                                        <IconArrow className="h-3 w-auto block fill-black group-hover:fill-(--color-4)" />
                                     </span>
                                 </Link>
                             ) )
@@ -120,7 +120,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className="bg-[#aa7b54] px-8 pb-16 relative before:bg-[#e9e9df] before:top-0 before:left-0 before:h-[16%] before:w-full before:absolute before:z-0">
-                    <div className="bg-[#6f6f3a] rounded-2xl overflow-hidden aspect-[9/16] md:aspect-auto lg:aspect-video relative shadow-xl mb-16">
+                    <div className="bg-[#6f6f3a] rounded-2xl overflow-hidden aspect-9/16 md:aspect-auto lg:aspect-video relative shadow-xl mb-16">
                         <Image 
                             src="/images/inicio-quienes-somos-bg.jpg"
                             alt="Geoensayos, un laboratorio de ingeniería de materiales"
