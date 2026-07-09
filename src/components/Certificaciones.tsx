@@ -8,17 +8,17 @@ export const Certificaciones = () => {
 
     return(
         <div className="flex flex-row gap-6 w-71.25 pt-4">
-            <div className="w-18">
+            <div className="w-[72.5px]">
                 <Link href="./documentos/iso-9001-2015-icontec.pdf" target="_blank">
                     <Iso90001 />
                 </Link>
             </div>
-            <div className="w-18">
+            <div className="w-[69.4px]">
                 <Link href="./documentos/acreditacion-onac-2025.pdf" target="_blank">
                     <OnacCertificate />
                 </Link>
             </div>
-            <div className="flex-1">
+            <div className="w-[110px]">
                 <Logo className="w-full" />
             </div>
         </div>

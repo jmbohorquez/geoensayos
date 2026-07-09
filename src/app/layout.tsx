@@ -6,7 +6,7 @@ import "../styles/globals.scss";
 
 export const metadata: Metadata = {
     title: {
-        template: 'Laborato de pruebas de materiales | Geoensayos',
+        template: 'Laboratorio de pruebas de suelos, concretos y mezclas asfálticas  | Geoensayos',
         default: 'Somos un laboratorio de ensayos, altamente productiva, confiable y eficaz acreditada y certificada bajo las normas NTC/IEC 17025:2017',
     },
     icons: {
