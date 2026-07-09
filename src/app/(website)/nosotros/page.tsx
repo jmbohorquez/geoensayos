@@ -31,8 +31,8 @@ export default function NosotrosPage(){
                 </div>
             </section>
             <main className="nosotros-main-content">
-                <div className="main-content-inner">
-                    <div className="nosotros-main-image">
+                <div className="w-full md:w-10/12 lg:w-8/10 mx-auto flex flex-col lg:flex-row gap-8">
+                    <div className="w-full lg:w-1/2 relative z-50">
                         <Image 
                             src="/images/nosotros-main-content.jpg"
                             alt="Geoensayos, confiables y eficaces acreditados y certificados"
@@ -40,9 +40,9 @@ export default function NosotrosPage(){
                             width={ 488 }
                         />
                     </div>
-                    <div className="nosotros-main-text">
+                    <div className="w-full lg:w-1/2 px-8 pt-8 lg:pt-48">
                         <p className="mb-4">Somos especialista en ingeniería de materiales  y estamos enfocados en el procesamiento de concretos, suelos, agregados y mezclas asfálticas, con valor agregado técnico.</p>
-                        <p className="mb-4">El laboratorio cuenta con <Link href="./documentos/acreditacion-onac-2025.pdf" target="_blank">acreditación</Link> por parte del Organismo Nacional de Acreditación (ONAC), vigente a la fecha, con código de acreditación 20-LAB-013, bajo la norma ISO/IEC 17025:2017.</p>
+                        <p className="mb-4">Geo Ensayos S.A.S cuenta con <Link href="./documentos/acreditacion-onac-2025.pdf" target="_blank">acreditación</Link> de competencia técnica vigente a la fecha, otorgada por el Organismo Nacional de Acreditación de Colombia (ONAC) en el certificado número 20-LAB-013 bajo los requisitos de la norma NTC ISO/IEC-17025:2017. El alcance de acreditación incluye ensayos realizados bajo normas técnicas reconocidas. Así mismo, cuenta con la certificación de sus procesos bajo las normas ISO 9001:2015, enfocando su Sistema Integrado de Gestión a la mejora continua y la satisfacción del cliente.</p>
                         <Certificaciones />
                     </div>
                 </div>
