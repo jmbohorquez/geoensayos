@@ -1,34 +1,143 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Geoensayos
+
+Sitio web corporativo de **GEO ENSAYOS SAS**, laboratorio colombiano de ensayos de ingeniería especializado en pruebas de concretos, suelos, agregados y mezclas asfálticas para la industria de la construcción.
+
+## Stack Tecnológico
+
+- **Framework:** Next.js 15 (App Router)
+- **React:** 19
+- **Lenguaje:** TypeScript
+- **Estilos:** Tailwind CSS v4 + SCSS modules
+- **Formularios:** Formik + Yup
+- **Email:** Nodemailer (Gmail SMTP)
+- **Slider:** react-slideshow-image
+- **Analytics:** Google Tag Manager
+- **SVGs:** @svgr/webpack
+
+## Requisitos
+
+- Node.js 18+
+- npm
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
+# Instalar dependencias
+pnpm install
+
+# Copiar y configurar variables de entorno
+cp .env.example .env
+
+# Iniciar servidor de desarrollo
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Comando | Descripción |
+|---|---|
+| `pnpm dev` | Inicia servidor de desarrollo |
+| `pnpm build` | Construye la aplicación para producción |
+| `pnpm start` | Inicia servidor de producción |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Estructura del Proyecto
 
-## Learn More
+```
+src/
+├── app/
+│   ├── (website)/           # Route group - páginas públicas
+│   │   ├── page.tsx         # Home
+│   │   ├── contacto/
+│   │   ├── nosotros/
+│   │   ├── servicios/
+│   │   │   ├── concretos/
+│   │   │   ├── suelos-y-agregados/
+│   │   │   ├── mezclas-asfalticas/
+│   │   │   ├── laboratorio-en-sitio/
+│   │   │   ├── supervision-y-control-en-obra/
+│   │   │   └── ejecucion-de-apiques/
+│   │   ├── quejas-reclamos/
+│   │   ├── acuerdo-confidencialidad/
+│   │   ├── politica-calidad/
+│   │   └── politica-imparcialidad/
+│   ├── api/
+│   │   └── pqr-sender/      # API route para envío de formulario PQR
+│   ├── layout.tsx            # Root layout (GTM, fuentes)
+│   └── globals.css
+├── components/
+│   ├── ui/                   # Header, Footer
+│   ├── forms/                # FormPQR, LabelForms
+│   ├── cta/                  # BTNWhatsappText
+│   ├── BotonComponent.tsx
+│   ├── Certificaciones.tsx
+│   ├── ContactPanel.tsx
+│   ├── HomeImageSlider.tsx
+│   ├── Icons.tsx
+│   └── WhatsappBTN.tsx
+├── config/
+│   ├── fonts.ts
+│   └── nodemailer.ts
+├── content/
+│   ├── menu.json
+│   ├── servicios.json
+│   └── proyectos.json
+└── styles/
+    ├── abstract/
+    ├── basics/
+    ├── components/
+    ├── layout/
+    └── pages/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Páginas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Ruta | Descripción |
+|---|---|
+| `/` | Home / Landing page |
+| `/nosotros` | Quiénes somos |
+| `/servicios` | Portafolio de servicios |
+| `/servicios/concretos` | Ensayos de concreto |
+| `/servicios/suelos-y-agregados` | Suelos y agregados |
+| `/servicios/mezclas-asfalticas` | Mezclas asfálticas |
+| `/servicios/laboratorio-en-sitio` | Laboratorio en sitio |
+| `/servicios/supervision-y-control-en-obra` | Supervisión y control |
+| `/servicios/ejecucion-de-apiques` | Ejecución de apiques |
+| `/contacto` | Contacto |
+| `/quejas-reclamos` | Formulario PQR (PQRSDF) |
+| `/acuerdo-confidencialidad` | Acuerdo de confidencialidad |
+| `/politica-calidad` | Política de calidad |
+| `/politica-imparcialidad` | Política de imparcialidad |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Variables de Entorno
 
-## Deploy on Vercel
+Crear archivo `.env` en la raíz del proyecto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```env
+MAIL_SENDER_USER=correo@gmail.com
+MAIL_SENDER_PASSWORD=contraseña_app_gmail
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## APIs Externas
+
+- **Gmail SMTP** — Envío de formulario PQR via Nodemailer
+- **WhatsApp** — Links directos `wa.me/573168501923`
+- **Google Tag Manager** — GTM-5G8S6G4V
+- **Google Fonts** — Roboto
+
+## Arquitectura
+
+- **Server Components por defecto** — Solo 3 componentes cliente: Header (menú móvil), HomeImageSlider (carrusel), FormPQR (formulario)
+- **Sin estado global** — Todo el estado es local en los componentes
+- **Route group `(website)`** — Layout compartido (Header + Footer + WhatsApp) sin afectar API routes
+- **SVGs como componentes** — Mediante `@svgr/webpack`
+- **Estilos mixtos** — Tailwind CSS v4 + SCSS parciales con estructura BEM
+
+## Despliegue
+
+```bash
+npm run build
+```
+
+La aplicación puede desplegarse en cualquier plataforma que soporte Next.js (Vercel, Node.js standalone, etc.).

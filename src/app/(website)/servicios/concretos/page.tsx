@@ -7,8 +7,8 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Pruebas para concretos | Geoensayos",
-    description: "El concreto es el corazón de cualquier obra civil: sostiene estructuras, recibe cargas y asegura la vida útil de un proyecto. Pero no siempre la mezcla que llega a obra cumple lo prometido. Si no se controla su calidad, pueden aparecer problemas como grietas, deformaciones o incluso fallas estructurales."
+    title: "Ensayos de Concretos | Geoensayos",
+    description: "Verificamos la resistencia y calidad de concretos para garantizar estructuras seguras y duraderas en tu obra civil."
 }
 
 export default function ConcretoPage(){

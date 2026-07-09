@@ -7,8 +7,8 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Supervisión, control y seguimiento al plan de inspección y ensayos en Obra | Geoensayos",
-    description: "Supervisión, control y seguimiento al plan de inspección y ensayos en Obra"
+    title: "Supervisión y Control en Obra | Geoensayos",
+    description: "Aseguramos que cada etapa de tu proyecto cumpla la norma, evitando reprocesos, sobrecostos y retrasos en obra."
 }
 
 

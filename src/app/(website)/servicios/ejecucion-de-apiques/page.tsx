@@ -7,10 +7,9 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Ejecución de apiques | Geoensayos",
-    description: "Supervisión, control y seguimiento al plan de inspección y ensayos en Obra"
+    title: "Ejecución de Apiques y sondeos | Geoensayos",
+    description: "Realizamos apiques que revelan las condiciones reales del terreno para diseñar y construir sobre bases seguras."
 }
-
 
 export default function EjecucionDeApiquesPage(){
     return(

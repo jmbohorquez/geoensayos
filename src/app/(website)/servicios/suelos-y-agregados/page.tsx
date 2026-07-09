@@ -7,8 +7,8 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Pruebas para Suelos y agregados | Geoensayos",
-    description: "En Geoensayos verificamos suelos y agregados para que tu proyecto no sufra hundimientos, fisuras ni fallas prematuras."
+    title: "Ensayos de Suelos y Agregados | Geoensayos",
+    description: "Analizamos suelos y agregados para prevenir fallas en vías y cimentaciones, asegurando obras más seguras y estables."
 }
 
 export default function ConcretoPage(){

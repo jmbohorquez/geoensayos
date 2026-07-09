@@ -7,8 +7,8 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Pruebas para Mezclas asfálticas | Geoensayos",
-    description: "Comprobamos que los pavimentos sean resistentes, duraderos y adecuados para el tránsito y el clima."
+    title: "Ensayos de Mezclas Asfálticas | Geoensayos",
+    description: "Evaluamos la calidad de mezclas asfálticas para garantizar pavimentos resistentes, duraderos y sin fallas prematuras."
 }
 
 

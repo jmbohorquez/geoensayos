@@ -7,8 +7,8 @@ import { Certificaciones } from "../../../../components/Certificaciones";
 import IconCheck from "../../../../../public/images/IconCheck.svg";
 
 export const metadata: Metadata = {
-    title: "Montaje de equipo de laboratorio en sitio | Geoensayos",
-    description: "Comprobamos que los pavimentos sean resistentes, duraderos y adecuados para el tránsito y el clima."
+    title: "Laboratorio en Obra | Geoensayos",
+    description: "Instalamos laboratorio en tu obra para obtener resultados inmediatos, controlar materiales y tomar decisiones seguras."
 }
 
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import {IconPhone, IconTelephone, IconLocation} from "../../../components/Icons";
+import { ContactForm } from "../../../components/forms/ContactForm";
 
 export const metadata: Metadata = {
     title: "Contáctanos | Geoensayos",
@@ -37,6 +38,9 @@ export default function ContactoPage(){
                                 (+57) 310 305 4570</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="mt-16 pb-16">
+                        <ContactForm />
                     </div>
                 </div>
             </main>

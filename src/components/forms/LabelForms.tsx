@@ -3,11 +3,15 @@ interface Props{
     inputFor: string; 
     text: string; 
     req: boolean;
+    clases?: string;
 }
 
-export const LabelForms = ({ inputFor, text, req }: Props) => {
+export const LabelForms = ({ inputFor, text, req, clases }: Props) => {
     return(
-        <label htmlFor={ inputFor }>
+        <label 
+            htmlFor={ inputFor }
+            className={`${ clases }`}
+        >
             { text }
             {
                 req &&
